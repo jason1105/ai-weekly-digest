@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 技术周刊</title>
+  <meta name="description" content="每周精选 AI 与开发者技术资讯，由 Claude AI 自动生成摘要">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── Reset & base ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #07091a;
+      --navy-2:     #0d1224;
+      --purple:     #8b5cf6;
+      --purple-d:   #6d28d9;
+      --purple-l:   #a78bfa;
+      --blue:       #60a5fa;
+      --blue-d:     #3b82f6;
+      --cyan:       #22d3ee;
+      --orange:     #fb923c;
+      --orange-d:   #f97316;
+      --green:      #34d399;
+      --text-1:     #f1f5f9;
+      --text-2:     #94a3b8;
+      --text-3:     #64748b;
+      --glass:      rgba(255,255,255,0.04);
+      --glass-b:    rgba(255,255,255,0.07);
+      --card-glow:  rgba(139,92,246,0.12);
+      --radius:     16px;
+      --radius-sm:  10px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--navy);
+      color: var(--text-1);
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* ── Ambient background ───────────────────────────────────── */
+    .bg-wrap {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .bg-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.35;
+      animation: drift 20s ease-in-out infinite alternate;
+    }
+    .bg-orb-1 {
+      width: 600px; height: 600px;
+      top: -200px; left: -150px;
+      background: radial-gradient(circle, #4c1d95, transparent 70%);
+      animation-duration: 22s;
+    }
+    .bg-orb-2 {
+      width: 500px; height: 500px;
+      top: 10%; right: -180px;
+      background: radial-gradient(circle, #1e3a8a, transparent 70%);
+      animation-duration: 18s;
+      animation-delay: -6s;
+    }
+    .bg-orb-3 {
+      width: 400px; height: 400px;
+      bottom: 10%; left: 30%;
+      background: radial-gradient(circle, #0e7490, transparent 70%);
+      opacity: 0.2;
+      animation-duration: 25s;
+      animation-delay: -12s;
+    }
+
+    @keyframes drift {
+      0%   { transform: translate(0,   0)   scale(1);    }
+      50%  { transform: translate(30px, 20px) scale(1.05); }
+      100% { transform: translate(-20px, 40px) scale(0.97); }
+    }
+
+    /* Subtle grid texture */
+    .bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+
+    /* ── Layout ───────────────────────────────────────────────── */
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* ── Masthead ─────────────────────────────────────────────── */
+    .masthead {
+      padding: 64px 0 44px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 14px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--purple-l);
+      background: rgba(139,92,246,0.1);
+      border: 1px solid rgba(139,92,246,0.25);
+      margin-bottom: 22px;
+    }
+
+    .badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--purple);
+      box-shadow: 0 0 6px var(--purple);
+      animation: blink 2.5s ease-in-out infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.3; }
+    }
+
+    .masthead h1 {
+      font-size: clamp(2.4rem, 6vw, 3.8rem);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #e2e8f0 0%, #c4b5fd 45%, #93c5fd 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .masthead-sub {
+      font-size: 1rem;
+      color: var(--text-2);
+      font-weight: 300;
+      max-width: 480px;
+      margin: 0 auto 24px;
+    }
+
+    .week-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 20px;
+      border-radius: 100px;
+      background: var(--glass);
+      border: 1px solid var(--glass-b);
+      backdrop-filter: blur(12px);
+      font-size: 13px;
+      color: var(--text-2);
+    }
+
+    .week-pill svg { flex-shrink: 0; }
+
+    /* ── Section divider ──────────────────────────────────────── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(139,92,246,0.3), rgba(59,130,246,0.25), transparent);
+      margin: 16px 0 40px;
+    }
+
+    /* ── Stats row ────────────────────────────────────────────── */
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 1.6rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--purple-l), var(--blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+    }
+    .stat-label {
+      font-size: 11px;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-top: 2px;
+    }
+
+    /* ── Loading state ────────────────────────────────────────── */
+    #loading {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .dots span {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--purple);
+      animation: wave 1.2s ease-in-out infinite;
+    }
+    .dots span:nth-child(2) { animation-delay: 0.2s; }
+    .dots span:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes wave {
+      0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+      30%            { transform: translateY(-10px); opacity: 1; }
+    }
+
+    #loading p { color: var(--text-3); font-size: 14px; }
+
+    /* ── Card grid ────────────────────────────────────────────── */
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    /* ── Individual card ──────────────────────────────────────── */
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: var(--glass);
+      border: 1px solid var(--glass-b);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s cubic-bezier(0.4,0,0.2,1),
+                  border-color 0.25s,
+                  box-shadow 0.25s;
+      animation: rise 0.5s ease both;
+    }
+
+    /* Rank number watermark */
+    .card::after {
+      content: attr(data-rank);
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 5rem;
+      font-weight: 800;
+      line-height: 1;
+      opacity: 0.04;
+      color: #fff;
+      pointer-events: none;
+      user-select: none;
+      transition: opacity 0.25s;
+    }
+    .card:hover::after { opacity: 0.07; }
+
+    /* Top shimmer line */
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.25s;
+      pointer-events: none;
+    }
+
+    .card:hover {
+      border-color: rgba(139,92,246,0.35);
+      box-shadow: 0 0 0 1px rgba(139,92,246,0.1),
+                  0 16px 48px rgba(0,0,0,0.4),
+                  0 0 60px rgba(139,92,246,0.08);
+      transform: translateY(-2px);
+    }
+    .card:hover::before { opacity: 1; }
+
+    /* Stagger */
+    .card:nth-child(1)  { animation-delay: 0.04s; }
+    .card:nth-child(2)  { animation-delay: 0.08s; }
+    .card:nth-child(3)  { animation-delay: 0.12s; }
+    .card:nth-child(4)  { animation-delay: 0.16s; }
+    .card:nth-child(5)  { animation-delay: 0.20s; }
+    .card:nth-child(6)  { animation-delay: 0.24s; }
+    .card:nth-child(7)  { animation-delay: 0.28s; }
+    .card:nth-child(8)  { animation-delay: 0.32s; }
+    .card:nth-child(9)  { animation-delay: 0.36s; }
+    .card:nth-child(10) { animation-delay: 0.40s; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Card internals ───────────────────────────────────────── */
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 13px;
+    }
+
+    .rank-chip {
+      min-width: 30px;
+      height: 30px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .rank-hn {
+      background: rgba(249,115,22,0.12);
+      border: 1px solid rgba(249,115,22,0.22);
+      color: var(--orange);
+    }
+    .rank-github {
+      background: rgba(139,92,246,0.12);
+      border: 1px solid rgba(139,92,246,0.22);
+      color: var(--purple-l);
+    }
+
+    .card-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--text-1);
+      line-height: 1.45;
+      flex: 1;
+    }
+
+    .source-pill {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .source-hn {
+      background: rgba(249,115,22,0.1);
+      border: 1px solid rgba(249,115,22,0.2);
+      color: var(--orange-d);
+    }
+    .source-github {
+      background: rgba(139,92,246,0.1);
+      border: 1px solid rgba(139,92,246,0.2);
+      color: var(--purple-l);
+    }
+
+    .card-summary {
+      font-family: 'Noto Sans SC', 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 300;
+      color: var(--text-2);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .card-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .score-tag {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      color: var(--text-3);
+    }
+
+    .read-link {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      color: var(--blue);
+      opacity: 0.6;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+    .card:hover .read-link { opacity: 1; }
+
+    /* ── Empty / error ────────────────────────────────────────── */
+    .empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-3);
+    }
+
+    /* ── Footer ───────────────────────────────────────────────── */
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--glass-b);
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-3);
+      line-height: 2;
+    }
+    footer a {
+      color: var(--text-2);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    footer a:hover { color: var(--text-1); }
+
+    .footer-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+      color: var(--text-2);
+      font-size: 13px;
+    }
+
+    /* ── Responsive ───────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      .masthead { padding: 44px 0 32px; }
+      .masthead h1 { letter-spacing: -0.5px; }
+      .card { padding: 18px 18px; }
+      .card::after { display: none; }
+      .stats-row { gap: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Ambient background -->
+  <div class="bg-wrap" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+
+  <main class="page">
+    <!-- Masthead -->
+    <header class="masthead">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        AI Weekly
+      </div>
+
+      <h1>AI 技术周刊</h1>
+
+      <p class="masthead-sub">
+        每周精选 HackerNews 与 GitHub 热门资讯<br>
+        由 Claude AI 自动分析 · 中文摘要
+      </p>
+
+      <div class="week-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        <span id="week-label">加载中…</span>
+        &nbsp;·&nbsp;
+        <span id="date-label"></span>
+      </div>
+    </header>
+
+    <div class="divider" role="separator"></div>
+
+    <!-- Stats row (filled by JS) -->
+    <div class="stats-row" id="stats-row" style="display:none">
+      <div class="stat">
+        <div class="stat-num" id="stat-total">—</div>
+        <div class="stat-label">本期精选</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" id="stat-hn">—</div>
+        <div class="stat-label">HN 资讯</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" id="stat-gh">—</div>
+        <div class="stat-label">GitHub 项目</div>
+      </div>
+    </div>
+
+    <!-- Loading -->
+    <div id="loading">
+      <div class="dots">
+        <span></span><span></span><span></span>
+      </div>
+      <p>正在加载本周精选…</p>
+    </div>
+
+    <!-- Digest grid -->
+    <div class="grid" id="grid" role="list" aria-live="polite"></div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-logo">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        AI 技术周刊
+      </div>
+      <br>
+      数据来源：<a href="https://news.ycombinator.com" target="_blank" rel="noopener">HackerNews</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      &nbsp;·&nbsp;
+      摘要由 <a href="https://anthropic.com" target="_blank" rel="noopener">Claude</a> 生成
+      &nbsp;·&nbsp;
+      每周一自动更新
+    </footer>
+  </main>
+
+  <script>
+    'use strict';
+
+    /* ── SVG icon helpers ────────────────────────────────────── */
+    const icon = {
+      arrow: `<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`,
+      star:  `<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`,
+      up:    `<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4l8 8H4z"/></svg>`,
+      gh:    `<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58 0-.28-.01-1.02-.02-2-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>`,
+    };
+
+    /* ── Fallback data (shown if JSON hasn't been generated yet) */
+    const FALLBACK = {
+      generated_at: new Date().toISOString(),
+      week: "样例数据（首次运行前）",
+      items: [
+        {
+          title: "Sample: Anthropic releases Claude 4 with 1M token context",
+          url: "https://news.ycombinator.com",
+          source: "HN",
+          summary: "这是样例数据。请在 GitHub 仓库的 Actions 页面手动触发一次工作流，生成真实的每周精选。触发后约 30 秒，页面将自动更新为最新内容。",
+          score: 1234
+        },
+        {
+          title: "Sample: ollama/ollama — Run large language models locally",
+          url: "https://github.com/ollama/ollama",
+          source: "GitHub",
+          summary: "这也是样例数据。工作流运行成功后，这里将显示由 Claude AI 从 HackerNews 和 GitHub 精选的 10 条真实技术资讯，并附中文摘要。",
+          score: 98000
+        }
+      ]
+    };
+
+    /* ── Fetch latest.json ───────────────────────────────────── */
+    async function loadData() {
+      try {
+        const res = await fetch('_data/latest.json', { cache: 'no-cache' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return await res.json();
+      } catch (err) {
+        console.warn('Could not load _data/latest.json, using fallback.', err.message);
+        return FALLBACK;
+      }
+    }
+
+    /* ── Format score ────────────────────────────────────────── */
+    function formatScore(item) {
+      const n = Number(item.score ?? item.stars ?? item.points ?? 0);
+      const formatted = n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n);
+      return item.source === 'GitHub'
+        ? `${icon.star} ${formatted}`
+        : `${icon.up} ${formatted}`;
+    }
+
+    /* ── Render one card ─────────────────────────────────────── */
+    function renderCard(item, index) {
+      const isGH   = item.source === 'GitHub';
+      const cls    = isGH ? 'github' : 'hn';
+      const srcLbl = isGH ? `${icon.gh} GitHub` : 'HN';
+
+      // Escape for HTML attribute safety
+      const safeUrl = encodeURI(item.url || '#').replace(/"/g, '%22');
+
+      return `
+        <a
+          href="${safeUrl}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="card"
+          data-rank="${index}"
+          role="listitem"
+          aria-label="${(item.title || '').replace(/"/g, '&quot;')}"
+        >
+          <div class="card-top">
+            <div class="rank-chip rank-${cls}" aria-hidden="true">${index}</div>
+            <div class="card-title">${escHtml(item.title || '')}</div>
+            <span class="source-pill source-${cls}" aria-label="来源：${item.source}">${srcLbl}</span>
+          </div>
+          <p class="card-summary">${escHtml(item.summary || '')}</p>
+          <div class="card-foot">
+            <span class="score-tag" aria-label="热度">${formatScore(item)}</span>
+            <span class="read-link" aria-hidden="true">阅读原文 ${icon.arrow}</span>
+          </div>
+        </a>`;
+    }
+
+    /* ── Minimal HTML escaper ────────────────────────────────── */
+    function escHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    /* ── Render stats ────────────────────────────────────────── */
+    function renderStats(items) {
+      const hn = items.filter(i => i.source === 'HN').length;
+      const gh = items.filter(i => i.source === 'GitHub').length;
+      document.getElementById('stat-total').textContent = items.length;
+      document.getElementById('stat-hn').textContent    = hn;
+      document.getElementById('stat-gh').textContent    = gh;
+      document.getElementById('stats-row').style.display = '';
+    }
+
+    /* ── Main ────────────────────────────────────────────────── */
+    async function init() {
+      const loadingEl = document.getElementById('loading');
+      const gridEl    = document.getElementById('grid');
+      const weekEl    = document.getElementById('week-label');
+      const dateEl    = document.getElementById('date-label');
+
+      const data = await loadData();
+
+      // Header
+      weekEl.textContent = data.week || '';
+      if (data.generated_at) {
+        const d = new Date(data.generated_at);
+        dateEl.textContent = '更新于 ' + d.toLocaleDateString('zh-CN', {
+          year: 'numeric', month: 'long', day: 'numeric'
+        });
+      }
+
+      // Hide loading
+      loadingEl.style.display = 'none';
+
+      const items = Array.isArray(data.items) ? data.items : [];
+
+      if (items.length === 0) {
+        gridEl.innerHTML = `<div class="empty">
+          <p>暂无数据，请先手动触发 GitHub Actions 工作流生成内容。</p>
+        </div>`;
+        return;
+      }
+
+      renderStats(items);
+      gridEl.innerHTML = items.map((item, i) => renderCard(item, i + 1)).join('');
+    }
+
+    init();
+  </script>
+</body>
+</html>
