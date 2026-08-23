@@ -24,7 +24,8 @@ jobs:
 
       - name: Fetch data and generate digest
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
           GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 << 'PYEOF'
@@ -33,11 +34,12 @@ jobs:
 
           print("=== AI Weekly Digest Generator ===")
 
-          ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+          OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
+          MODEL = os.environ.get("OPENROUTER_MODEL") or "deepseek/deepseek-chat"
           GITHUB_API_TOKEN  = os.environ.get("GITHUB_API_TOKEN", "")
 
-          if not ANTHROPIC_API_KEY:
-              print("ERROR: ANTHROPIC_API_KEY secret is not configured")
+          if not OPENROUTER_API_KEY:
+              print("ERROR: OPENROUTER_API_KEY secret is not configured")
               sys.exit(1)
 
           # ─── 1. Fetch HackerNews top stories ─────────────────────────
@@ -130,20 +132,19 @@ jobs:
           )
 
           # ─── 4. Call Anthropic Claude API ─────────────────────────────
-          print("\n[3/3] Calling Claude API (claude-haiku-4-5-20251001)...")
+          print(f"\n[3/3] Calling OpenRouter ({MODEL})...")
           payload = json.dumps({
-              "model": "claude-haiku-4-5-20251001",
+              "model": MODEL,
               "max_tokens": 4096,
               "messages": [{"role": "user", "content": prompt}],
           }).encode("utf-8")
 
           api_req = urllib.request.Request(
-              "https://api.anthropic.com/v1/messages",
+              "https://openrouter.ai/api/v1/chat/completions",
               data=payload,
               method="POST",
           )
-          api_req.add_header("x-api-key", ANTHROPIC_API_KEY)
-          api_req.add_header("anthropic-version", "2023-06-01")
+          api_req.add_header("Authorization", f"Bearer {OPENROUTER_API_KEY}")
           api_req.add_header("Content-Type", "application/json")
 
           try:
@@ -151,13 +152,13 @@ jobs:
                   api_result = json.loads(resp.read())
           except urllib.error.HTTPError as exc:
               body = exc.read().decode("utf-8", errors="replace")
-              print(f"  ERROR: Claude API HTTP {exc.code}: {body[:500]}")
+              print(f"  ERROR: OpenRouter HTTP {exc.code}: {body[:500]}")
               sys.exit(1)
           except Exception as exc:
-              print(f"  ERROR: Claude API: {exc}")
+              print(f"  ERROR: OpenRouter: {exc}")
               sys.exit(1)
 
-          raw = api_result["content"][0]["text"].strip()
+          raw = api_result["choices"][0]["message"]["content"].strip()
 
           # Strip markdown code fences if Claude wrapped the JSON
           if raw.startswith("```"):
@@ -170,7 +171,7 @@ jobs:
           try:
               digest_items = json.loads(raw)
           except json.JSONDecodeError as exc:
-              print(f"  ERROR: Could not parse Claude response as JSON: {exc}")
+              print(f"  ERROR: Could not parse model response as JSON: {exc}")
               print(f"  Raw preview: {raw[:400]}")
               sys.exit(1)
 
