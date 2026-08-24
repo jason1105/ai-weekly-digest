@@ -558,26 +558,8 @@
     };
 
     /* ── Fallback data (shown if JSON hasn't been generated yet) */
-    const FALLBACK = {
-      generated_at: new Date().toISOString(),
-      week: "样例数据（首次运行前）",
-      items: [
-        {
-          title: "Sample: Anthropic releases Claude 4 with 1M token context",
-          url: "https://news.ycombinator.com",
-          source: "HN",
-          summary: "这是样例数据。请在 GitHub 仓库的 Actions 页面手动触发一次工作流，生成真实的每周精选。触发后约 30 秒，页面将自动更新为最新内容。",
-          score: 1234
-        },
-        {
-          title: "Sample: ollama/ollama — Run large language models locally",
-          url: "https://github.com/ollama/ollama",
-          source: "GitHub",
-          summary: "这也是样例数据。工作流运行成功后，这里将显示由 Claude AI 从 HackerNews 和 GitHub 精选的 10 条真实技术资讯，并附中文摘要。",
-          score: 98000
-        }
-      ]
-    };
+    // 无数据时不再渲染样例内容，交由空状态提示
+    const FALLBACK = { generated_at: null, week: null, items: [] };
 
     /* ── Fetch latest.json ───────────────────────────────────── */
     async function loadData() {
