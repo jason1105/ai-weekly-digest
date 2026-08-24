@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-24T07:44:14.081792Z",
+  "generated_at": "2026-08-24T09:37:28.297231Z",
   "week": "2026 第 34 周",
   "year": 2026,
   "week_number": 34,
   "items": [
     {
-      "title": "Everything I Own, Owned",
-      "url": "https://schlarp.com/posts/everything-i-own-owned/",
-      "source": "HN",
-      "score": 734,
-      "summary": "作者记录个人所有物品与数字资产的管理方式，探讨拥有最小化与系统性整理。对开发者而言，是观察个人工具链和清单驱动思维的一个独特案例，可迁移到项目资产管理和数据追踪设计。"
-    },
-    {
-      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
-      "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
-      "source": "HN",
-      "score": 459,
-      "summary": "Anthropic最强模型面临用户增长瓶颈，而更低价工具正快速抢占市场。这给AI应用开发者的选择增添了重要判断依据——模型性能、成本和部署复杂度需要平衡，未来多模型协作或将更常态。"
-    },
-    {
-      "title": "What Is a Harness?",
-      "url": "https://earendil.com/posts/what-is-a-harness/",
-      "source": "HN",
-      "score": 423,
-      "summary": "这篇文章深入解析「harness」在软件与系统工程中的本质：它是连接与调度各种开发组件的约束性抽象。理解这种元层概念能帮助开发者设计可扩展、可维护的基础工具，优化命令行环境与集成管线。"
-    },
-    {
-      "title": "How I find problems to solve as a staff engineer",
-      "url": "https://lalitm.com/post/find-problems-staff-engineer/",
-      "source": "HN",
-      "score": 391,
-      "summary": "分享一位工程师在staff级别如何识别真正值得解决的问题：从沟通成本入手，聚焦低价值的重复工作而非追逐热门技术。对资深开发者是实用的职业成长参考，有助于把他们从破解转向方向和影响。"
-    },
-    {
-      "title": "How Complex Systems Fail (1998)",
-      "url": "https://how.complexsystems.fail/",
-      "source": "HN",
-      "score": 304,
-      "summary": "这是一篇经典技术哲学文章，剖析复杂系统如何在日常故障中维持运行，却又无法杜绝系统性失败。它对现代分布式系统设计与运维仍有指导价值，特别是理解“个别失败是常态”和如何弹性管理。"
-    },
-    {
-      "title": "My agent.md to improve LLM-assisted code quality",
-      "url": "https://fabiensanglard.net/agent.md/index.html",
-      "source": "HN",
-      "score": 291,
-      "summary": "作者用一份 agent.md 文件为 LLM 设定清晰的项目上下文与编码约束，使 AI 辅助编程产出更稳定的代码。这将为使用 AI 辅助编码的开发者提供模式，让自动化代理在具体项目中减少误解和行为偏差。"
-    },
-    {
-      "title": "Google Workspace thinks my domain is an email provider (2025)",
-      "url": "https://blog.elis.cc/articles/google-workspace-thinks-my-domain-is-an-email-provider/",
-      "source": "HN",
-      "score": 278,
-      "summary": "作者遇到Google Workspace将其域名误判为邮件服务提供商并导致访问受限，深入排查DNS与域名信誉后解决。这一排查路径对自建DNS、邮箱服务或依赖域名验证的开发者具有警示，相关配置比想象的敏感。"
-    },
-    {
-      "title": "Malware infects Android-based automotive head unit firmware",
-      "url": "https://securelist.com/android-head-unit-malware/121106/",
-      "source": "HN",
-      "score": 234,
-      "summary": "安全研究揭示汽车Android系统组件固件被植入恶意软件，可能影响车载信息娱乐并触及车辆内部网络。这是“车载系统成为安全隔离成本和连接潜在组件”的警示，对开发嵌入式Android与智能设备安全策略极为重要。"
-    },
-    {
-      "title": "I built a low-latency AI companion that plays Skyrim with me",
-      "url": "https://pantel.is/projects/ai-gaming-companion/",
-      "source": "HN",
-      "score": 116,
-      "summary": "作者为一个名为Skyrim的游戏构造低延迟AI助手，实现随行的游戏同伴提示交互。演示了AI多模态结合游戏引擎的应用场景、技术方案对工具注意和新手模型，可用于开发个性化陪伴软件和游戏交互实时的实现。"
-    },
-    {
       "title": "build-your-own-x",
       "url": "https://github.com/codecrafters-io/build-your-own-x",
       "source": "GitHub",
-      "score": 542441,
-      "summary": "这是最受欢迎的项目之一，汇集动手重建数据库、操作系统、编译器、网络协议等基础技术教程。开发者通过实现核心组件提高系统理解力和调试能力，比纯理论更适合深入编程原理和技术实践。"
+      "summary": "这是一个汇集了通过从零开始重建各类技术来学习编程的教程集，涵盖数据库、操作系统、编程语言等领域。开发者可以动手实现核心原理，加深对底层机制的理解。其价值在于提供实践路径，提升工程能力和系统设计水平，是进阶学习的宝贵资源。",
+      "score": 542474
+    },
+    {
+      "title": "awesome",
+      "url": "https://github.com/sindresorhus/awesome",
+      "source": "GitHub",
+      "summary": "这是一份庞大的精选清单，覆盖从编程语言到工具、框架、书籍等几乎所有主题。它由社区维护，条目经过严格筛选，质量极高。开发者能快速找到所需资源，节省搜索时间，是日常工作和学习中的导航仪，适合所有技术水平的开发者参考。",
+      "score": 499420
+    },
+    {
+      "title": "public-apis",
+      "url": "https://github.com/public-apis/public-apis",
+      "source": "GitHub",
+      "summary": "这是一个收录了免费开放API的集合，按类别组织，包括天气、金融、娱乐等。开发者可以轻松找到可用的API用于测试、学习或构建应用原型。覆盖范围广泛，持续更新，是开发者的宝贵资源库，能极大提高开发效率与项目灵感。",
+      "score": 469506
+    },
+    {
+      "title": "freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "source": "GitHub",
+      "summary": "freeCodeCamp是一个开源的学习平台，提供免费的编程课程和认证项目，涵盖Web开发、数据科学等领域。其代码库和课程内容对所有人开放，开发者不仅可以学习，还能参与贡献。该项目拥有庞大社区，是零基础入门和技能提升的绝佳选择。",
+      "score": 454513
+    },
+    {
+      "title": "free-programming-books",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "source": "GitHub",
+      "summary": "这是一个免费的编程书籍、课程和资源合集，覆盖多国语言和各类主题。由社区协作维护，内容丰富且更新及时。开发者无需付费即可获取高质量学习材料，适合自学和参考。该列表是编程教育的重要资源，值得每位开发者收藏。",
+      "score": 395119
+    },
+    {
+      "title": "openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "source": "GitHub",
+      "summary": "OpenClaw是一个跨平台的个人AI助手，类似于电影中的JARVIS，支持语音交互、任务自动化等功能。它可在多种操作系统上运行，高度可定制。开发者可以利用它构建个性化智能工作流，提升效率，也是探索AI Agent编程的绝佳起点。",
+      "score": 387285
+    },
+    {
+      "title": "system-design-primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "source": "GitHub",
+      "summary": "这是一份系统设计学习指南，涵盖大规模系统架构的核心概念、设计模式和案例分析。适合准备技术面试或希望提升架构能力的开发者。内容深入浅出，配有图解和练习，能帮助系统性地掌握分布式系统设计，是软件工程师的必备参考。",
+      "score": 365685
+    },
+    {
+      "title": "developer-roadmap",
+      "url": "https://github.com/nilbuild/developer-roadmap",
+      "source": "GitHub",
+      "summary": "这是一个交互式的开发者成长路径图，涵盖前端、后端、DevOps等多个方向。它提供了清晰的学习路线和推荐技术栈，帮助开发者规划职业生涯。通过可视化的节点和资源链接，初学者和进阶者都能找到适合自己的学习节奏，是实用导航工具。",
+      "score": 365286
+    },
+    {
+      "title": "coding-interview-university",
+      "url": "https://github.com/jwasham/coding-interview-university",
+      "source": "GitHub",
+      "summary": "这是一份由开发者从自学转行到软件工程师期间整理的学习清单，覆盖计算机科学基础和面试准备所需的知识点。内容详尽且结构化，包含题目、资源和计划。对于准备技术面试或系统复习CS知识的开发者来说，这是一份高效的自学手册。",
+      "score": 359599
+    },
+    {
+      "title": "awesome-python",
+      "url": "https://github.com/vinta/awesome-python",
+      "source": "GitHub",
+      "summary": "这是Python领域最著名的资源清单，收录了从Web框架、数据分析到机器学习等各类库和工具。经过精心筛选，条目质量高，版本更新频繁。Python开发者可以快速找到合适的库，避免重复造轮子，是Python生态不可或缺的索引。",
+      "score": 315756
     }
   ]
 }
