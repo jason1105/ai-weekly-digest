@@ -1,7 +1,78 @@
 {
-  "generated_at": null,
-  "week": null,
-  "year": null,
-  "week_number": null,
-  "items": []
+  "generated_at": "2026-08-24T07:22:23.528198Z",
+  "week": "2026 第 34 周",
+  "year": 2026,
+  "week_number": 34,
+  "items": [
+    {
+      "title": "Everything I own, owned",
+      "url": "https://schlarp.com/posts/everything-i-own-owned/",
+      "source": "HN",
+      "summary": "作者分享了个人数字资产管理的深刻见解，探讨了从数据备份到数字遗产规划的全面策略。对于开发者而言，这篇文章提供了实用的技术方案和思考框架，帮助管理和保护个人及客户的重要数字资产。",
+      "score": 693
+    },
+    {
+      "title": "I were 17, I'd learn how to build LLMs from scratch",
+      "url": "https://twitter.com/paulg/status/2091544343589060625",
+      "source": "HN",
+      "summary": "Paul Graham建议年轻人从零开始学习构建大型语言模型(LLMs)，强调基础技术理解的重要性。这对开发者意味着掌握核心AI技术将带来长期竞争优势，尤其是在AI快速发展的今天。",
+      "score": 31
+    },
+    {
+      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+      "source": "HN",
+      "summary": "文章指出Anthropic的高端AI模型面临用户吸引力不足的问题，而价格更低的替代品却蓬勃发展。这对开发者选择AI工具时提供了成本效益比的重要参考，也反映了市场对实用性和价格的敏感度。",
+      "score": 444
+    },
+    {
+      "title": "How I find problems to solve as a staff engineer",
+      "url": "https://lalitm.com/post/find-problems-staff-engineer/",
+      "source": "HN",
+      "summary": "资深工程师分享了如何识别和解决复杂技术问题的方法论。对于希望提升工程领导力的开发者来说，这篇文章提供了实用的策略和思维框架，有助于在组织中发挥更大的技术影响力。",
+      "score": 387
+    },
+    {
+      "title": "My agent.md to improve LLM-assisted code quality",
+      "url": "https://fabiensanglard.net/agent.md/index.html",
+      "source": "HN",
+      "summary": "作者分享了使用LLM辅助编码时提高代码质量的具体方法和文档模板。这对依赖AI编程工具的开发者尤为重要，提供了可操作的质量控制方案，能显著提升开发效率和代码可靠性。",
+      "score": 289
+    },
+    {
+      "title": "I built a low-latency AI companion that plays Skyrim with me",
+      "url": "https://pantel.is/projects/ai-gaming-companion/",
+      "source": "HN",
+      "summary": "开发者创建了一个低延迟AI游戏伴侣，能与玩家一起玩《上古卷轴》。这个项目展示了AI在游戏领域的创新应用，为开发者提供了实时交互系统的实现思路和技术参考。",
+      "score": 103
+    },
+    {
+      "title": "What Is a Harness?",
+      "url": "https://earendil.com/posts/what-is-a-harness/",
+      "source": "HN",
+      "summary": "文章深入解释了软件开发中测试工具(harness)的概念和重要性。对于关注代码质量和测试自动化的开发者来说，这篇文章提供了测试基础设施设计的核心知识，有助于构建更健壮的软件系统。",
+      "score": 415
+    },
+    {
+      "title": "AI Chip Architectures",
+      "url": "https://www.jepeake.com/ai-chip-architectures",
+      "source": "HN",
+      "summary": "详细解析了各种AI芯片架构的特点和适用场景。这对需要在硬件层面优化AI性能的开发者至关重要，为选择或设计AI加速方案提供了有价值的技术参考。",
+      "score": 65
+    },
+    {
+      "title": "build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "source": "GitHub",
+      "summary": "这个开源项目收集了从零开始构建各种技术(如数据库、操作系统等)的教程资源。对开发者来说，这是深入理解核心技术原理的绝佳途径，能显著提升系统设计和实现能力。",
+      "score": 542433
+    },
+    {
+      "title": "system-design-primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "source": "GitHub",
+      "summary": "该项目提供了全面的系统设计学习资源，包括大规模系统架构原则和面试准备材料。对开发者职业发展极为重要，尤其适合准备技术面试或希望提升系统设计能力的工程师。",
+      "score": 365680
+    }
+  ]
 }
