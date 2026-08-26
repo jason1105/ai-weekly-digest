@@ -25,6 +25,10 @@ jobs:
 
       - name: Fetch data and generate digest
         env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          # 过渡期保留 OpenRouter 兜底，切稳后可删
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
           GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -35,12 +39,13 @@ jobs:
 
           print("=== AI Weekly Digest Generator ===")
 
-          OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
-          MODEL = os.environ.get("OPENROUTER_MODEL") or "deepseek/deepseek-chat"
+          LLM_API_KEY = os.environ.get("LLM_API_KEY") or os.environ.get("OPENROUTER_API_KEY", "")
+          LLM_BASE_URL = (os.environ.get("LLM_BASE_URL") or "https://api.deepseek.com").rstrip("/")
+          MODEL = os.environ.get("LLM_MODEL") or os.environ.get("OPENROUTER_MODEL") or "deepseek-v4-flash"
           GITHUB_API_TOKEN  = os.environ.get("GITHUB_API_TOKEN", "")
 
-          if not OPENROUTER_API_KEY:
-              print("ERROR: OPENROUTER_API_KEY secret is not configured")
+          if not LLM_API_KEY:
+              print("ERROR: LLM_API_KEY (or OPENROUTER_API_KEY) secret is not configured")
               sys.exit(1)
 
           # ─── 1. Fetch HackerNews top stories ─────────────────────────
@@ -141,11 +146,11 @@ jobs:
           }).encode("utf-8")
 
           api_req = urllib.request.Request(
-              "https://openrouter.ai/api/v1/chat/completions",
+              LLM_BASE_URL + "/chat/completions",
               data=payload,
               method="POST",
           )
-          api_req.add_header("Authorization", f"Bearer {OPENROUTER_API_KEY}")
+          api_req.add_header("Authorization", f"Bearer {LLM_API_KEY}")
           api_req.add_header("Content-Type", "application/json")
 
           try:
