@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-24T09:37:28.297231Z",
+  "generated_at": "2026-08-26T08:59:17.277255Z",
   "week": "2026 第 34 周",
   "year": 2026,
   "week_number": 34,
   "items": [
     {
+      "title": "Apple introduces M6 and M5 Ultra",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+      "source": "HN",
+      "score": 1128,
+      "summary": "苹果发布新一代M6及M5 Ultra芯片，强调性能和AI算力的跃升。对开发者而言，这意味着本地大模型推理、编译和复杂计算任务将获得更强劲的硬件支撑，Apple Silicon生态的AI开发体验有望进一步改善。"
+    },
+    {
+      "title": "Nitter and XCancel receive cease and desist notices",
+      "url": "https://github.com/zedeus/nitter/issues/1442",
+      "source": "HN",
+      "score": 905,
+      "summary": "开源Twitter替代前端Nitter与账号注销服务XCancel收到停止侵权通知。此事关乎开源社区与平台之间的法律边界，会影响依赖Nitter获取免登录信息的开发者与隐私用户，也可能推动去中心化社交工具的新一轮讨论。"
+    },
+    {
+      "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+      "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+      "source": "HN",
+      "score": 474,
+      "summary": "据分析文章称，OpenAI自研芯片Jalapeño在性能上超越NVIDIA Blackwell。若属实，AI基础设施的竞争格局将生变，开发者的训练与推理成本可能下降，并促使更多替代性硬件方案进入技术选型视野。"
+    },
+    {
+      "title": "FDA authorizes first wearable device that monitors ketone and blood sugar levels",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
+      "source": "HN",
+      "score": 387,
+      "summary": "FDA批准首款同时连续监测酮体和血糖的可穿戴设备。对健康类应用开发者而言，这意味着新的生物数据源接口与算法优化机会，或可催生更精准的个性化营养、糖尿病管理和运动指导应用。"
+    },
+    {
+      "title": "Queryable Executables",
+      "url": "https://fzakaria.com/2026/08/24/actually-queryable-executables",
+      "source": "HN",
+      "score": 172,
+      "summary": "文章提出“可查询可执行文件”的理念，让二进制文件在运行时能被结构化查询。这对程序分析、调试和运维自动化有直接帮助，开发者可借助类似SQL的接口探索程序状态，提升逆向工程与监控效率。"
+    },
+    {
+      "title": "C2PA Cameras Do Not Survive Contact with Reality",
+      "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
+      "source": "HN",
+      "score": 148,
+      "summary": "这篇博客揭示C2PA内容真实性标准在Android相机实现中与现实的脱节。涉及数字签名、篡改检测和照片验证机制，对关注媒体溯源、安全取证及反深度伪造的开发者具有重要参考价值。"
+    },
+    {
+      "title": "When str.lower() is a security vulnerability in Python",
+      "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+      "source": "HN",
+      "score": 118,
+      "summary": "Python内置的str.lower()在某些Unicode字符上会引发安全漏洞，可能导致认证绕过或输入校验异常。文章提醒开发者不要想当然使用大小写转换处理用户输入，应结合unicodedata或显式规则，对高安全性场景尤其重要。"
+    },
+    {
+      "title": "Stalking the Wily Hacker: 40 years later – Cliff Stoll [video]",
+      "url": "https://www.youtube.com/watch?v=656058JxTM0",
+      "source": "HN",
+      "score": 88,
+      "summary": "Cliff Stoll在40年后重谈他的经典黑客追踪故事。作为网络安全史上的传奇事件，这场演讲不仅回顾了早期系统安全问题，更对当代安全社区有启发意义，适合希望理解威胁演化与安全文化的开发者观看。"
+    },
+    {
+      "title": "Maiao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others",
+      "url": "https://github.com/runetes/maiao",
+      "source": "HN",
+      "score": 78,
+      "summary": "Maiao将Gerrit风格的代码审查流程带到GitHub、GitLab、Gitea等平台，提供更严格的提交与审查模型。对长期使用Gerrit或希望改善团队代码质量流程的开发者，这是一个值得尝试的新型工作流工具。"
+    },
+    {
       "title": "build-your-own-x",
       "url": "https://github.com/codecrafters-io/build-your-own-x",
       "source": "GitHub",
-      "summary": "这是一个汇集了通过从零开始重建各类技术来学习编程的教程集，涵盖数据库、操作系统、编程语言等领域。开发者可以动手实现核心原理，加深对底层机制的理解。其价值在于提供实践路径，提升工程能力和系统设计水平，是进阶学习的宝贵资源。",
-      "score": 542474
-    },
-    {
-      "title": "awesome",
-      "url": "https://github.com/sindresorhus/awesome",
-      "source": "GitHub",
-      "summary": "这是一份庞大的精选清单，覆盖从编程语言到工具、框架、书籍等几乎所有主题。它由社区维护，条目经过严格筛选，质量极高。开发者能快速找到所需资源，节省搜索时间，是日常工作和学习中的导航仪，适合所有技术水平的开发者参考。",
-      "score": 499420
-    },
-    {
-      "title": "public-apis",
-      "url": "https://github.com/public-apis/public-apis",
-      "source": "GitHub",
-      "summary": "这是一个收录了免费开放API的集合，按类别组织，包括天气、金融、娱乐等。开发者可以轻松找到可用的API用于测试、学习或构建应用原型。覆盖范围广泛，持续更新，是开发者的宝贵资源库，能极大提高开发效率与项目灵感。",
-      "score": 469506
-    },
-    {
-      "title": "freeCodeCamp",
-      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
-      "source": "GitHub",
-      "summary": "freeCodeCamp是一个开源的学习平台，提供免费的编程课程和认证项目，涵盖Web开发、数据科学等领域。其代码库和课程内容对所有人开放，开发者不仅可以学习，还能参与贡献。该项目拥有庞大社区，是零基础入门和技能提升的绝佳选择。",
-      "score": 454513
-    },
-    {
-      "title": "free-programming-books",
-      "url": "https://github.com/EbookFoundation/free-programming-books",
-      "source": "GitHub",
-      "summary": "这是一个免费的编程书籍、课程和资源合集，覆盖多国语言和各类主题。由社区协作维护，内容丰富且更新及时。开发者无需付费即可获取高质量学习材料，适合自学和参考。该列表是编程教育的重要资源，值得每位开发者收藏。",
-      "score": 395119
-    },
-    {
-      "title": "openclaw",
-      "url": "https://github.com/openclaw/openclaw",
-      "source": "GitHub",
-      "summary": "OpenClaw是一个跨平台的个人AI助手，类似于电影中的JARVIS，支持语音交互、任务自动化等功能。它可在多种操作系统上运行，高度可定制。开发者可以利用它构建个性化智能工作流，提升效率，也是探索AI Agent编程的绝佳起点。",
-      "score": 387285
-    },
-    {
-      "title": "system-design-primer",
-      "url": "https://github.com/donnemartin/system-design-primer",
-      "source": "GitHub",
-      "summary": "这是一份系统设计学习指南，涵盖大规模系统架构的核心概念、设计模式和案例分析。适合准备技术面试或希望提升架构能力的开发者。内容深入浅出，配有图解和练习，能帮助系统性地掌握分布式系统设计，是软件工程师的必备参考。",
-      "score": 365685
-    },
-    {
-      "title": "developer-roadmap",
-      "url": "https://github.com/nilbuild/developer-roadmap",
-      "source": "GitHub",
-      "summary": "这是一个交互式的开发者成长路径图，涵盖前端、后端、DevOps等多个方向。它提供了清晰的学习路线和推荐技术栈，帮助开发者规划职业生涯。通过可视化的节点和资源链接，初学者和进阶者都能找到适合自己的学习节奏，是实用导航工具。",
-      "score": 365286
-    },
-    {
-      "title": "coding-interview-university",
-      "url": "https://github.com/jwasham/coding-interview-university",
-      "source": "GitHub",
-      "summary": "这是一份由开发者从自学转行到软件工程师期间整理的学习清单，覆盖计算机科学基础和面试准备所需的知识点。内容详尽且结构化，包含题目、资源和计划。对于准备技术面试或系统复习CS知识的开发者来说，这是一份高效的自学手册。",
-      "score": 359599
-    },
-    {
-      "title": "awesome-python",
-      "url": "https://github.com/vinta/awesome-python",
-      "source": "GitHub",
-      "summary": "这是Python领域最著名的资源清单，收录了从Web框架、数据分析到机器学习等各类库和工具。经过精心筛选，条目质量高，版本更新频繁。Python开发者可以快速找到合适的库，避免重复造轮子，是Python生态不可或缺的索引。",
-      "score": 315756
+      "score": 543054,
+      "summary": "该仓库汇总了从零重建数据库、操作系统、编译器、浏览器等技术的教程，是极佳的项目式学习资源。通过手写核心模块，开发者能深入理解底层原理，提升系统设计能力，适合各阶段工程师用于拓宽技术视野。"
     }
   ]
 }
