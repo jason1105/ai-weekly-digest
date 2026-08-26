@@ -166,12 +166,15 @@ jobs:
 
           raw = api_result["choices"][0]["message"]["content"].strip()
 
-          # Strip markdown code fences if Claude wrapped the JSON
-          if raw.startswith("```"):
-              lines_raw = raw.split("\n")
-              raw = "\n".join(lines_raw[1:] if lines_raw[0].startswith("```") else lines_raw)
-          if raw.endswith("```"):
-              raw = "\n".join(raw.split("\n")[:-1])
+          # 稳健提取 JSON 数组：不同模型可能包 markdown 围栏或加前言，
+          # 统一抓取第一个 [ 到最后一个 ] 之间的内容。
+          import re as _re
+          _m = _re.search(r"```(?:json)?\s*(.+?)```", raw, _re.S)
+          if _m:
+              raw = _m.group(1).strip()
+          _i, _j = raw.find("["), raw.rfind("]")
+          if _i != -1 and _j != -1 and _j > _i:
+              raw = raw[_i:_j+1]
           raw = raw.strip()
 
           try:
@@ -226,39 +229,18 @@ jobs:
               --body "Automated update by workflow: ${{ github.workflow }}"
             gh pr merge "$BRANCH" --squash --delete-branch
           fi
-
-
       - name: Notify on failure
-
         if: failure()
-
         env:
-
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
         run: |
-
           TITLE="⚠️ 工作流 ${{ github.workflow }} 运行失败"
-
           RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-
           BODY="[${{ github.workflow }}]($RUN_URL) 于 $(date -u '+%Y-%m-%d %H:%M UTC') 失败（分支 ${{ github.ref_name }}，触发 ${{ github.event_name }}）。请查看日志。"
-
-          EXISTING=$(gh issue list --state open --search "in:title $TITLE" --json number,title \
-
-                     --jq "[.[] | select(.title == \"$TITLE\")] | .[0].number")
-
+          EXISTING=$(gh issue list --state open --search "in:title $TITLE" --json number,title --jq "[.[] | select(.title == \"$TITLE\")] | .[0].number")
           if [ -n "$EXISTING" ]; then
-
             gh issue comment "$EXISTING" --body "$BODY"
-
           else
-
             gh label create ci-failure --color d73a4a --description "自动化工作流失败告警" 2>/dev/null || true
-
-            gh issue create --title "$TITLE" --body "$BODY" --label ci-failure 2>/dev/null \
-
-              || gh issue create --title "$TITLE" --body "$BODY"
-
+            gh issue create --title "$TITLE" --body "$BODY" --label ci-failure 2>/dev/null || gh issue create --title "$TITLE" --body "$BODY"
           fi
-
