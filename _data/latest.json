@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T08:59:16.355993Z",
+  "generated_at": "2026-08-26T09:10:14.731789Z",
   "week": "2026 第 34 周",
   "year": 2026,
   "week_number": 34,
@@ -8,71 +8,71 @@
       "title": "Apple introduces M6 and M5 Ultra",
       "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
       "source": "HN",
-      "score": 1128,
-      "summary": "苹果发布新一代M6与M5 Ultra芯片，宣称性能与AI算力大幅跃升。对开发者而言，这意味着更强的本地大模型推理能力和更高效的编译链路，值得关注后续Mac产品线的实际跑分和生态适配。"
+      "summary": "Apple发布新一代M6与M5 Ultra芯片，性能与AI算力大幅跃升，面向专业计算与端侧AI推理。开发者可借此在Mac上运行更大模型与高负载任务，并期待后续Mac产品线升级带来生产力提升。",
+      "score": 1128
     },
     {
       "title": "Nitter and XCancel receive cease and desist notices",
       "url": "https://github.com/zedeus/nitter/issues/1442",
       "source": "HN",
-      "score": 905,
-      "summary": "Nitter与XCancel收到停止函，引发开源社区对工具合法性的担忧。开发者需关注去中心化与代理类项目的法律风险，以及第三方API访问界限，可能影响自建推特替代方案的未来。"
-    },
-    {
-      "title": "New Mac Studio with M5 Max and M5 Ultra",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/",
-      "source": "HN",
-      "score": 768,
-      "summary": "新款Mac Studio搭载M5 Max/Ultra，面向专业工作站场景。开发者可期待更强CPU/GPU性能，适用于本地AI训练、视频渲染和大型编译任务，是追求高性能桌面工作流的又一选择。"
+      "summary": "Nitter与XCancel收到停止函，隐私友好的Twitter替代前端和取消服务工具面临法律打压。这提醒开发者，依赖第三方平台API的工具存在脆弱性，也加剧了开源社区对网络自由和访问公共数据的担忧。",
+      "score": 914
     },
     {
       "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
       "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
       "source": "HN",
-      "score": 474,
-      "summary": "SemiAnalysis报道称OpenAI自研芯片Jalapeño性能优于NVIDIA Blackwell，若属实将重构AI算力成本格局。开发者应关注未来API定价与模型训练效率变化，同时也需理性看待分析机构的初步评估。"
-    },
-    {
-      "title": "FDA authorizes first wearable device that monitors ketone and blood sugar levels",
-      "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
-      "source": "HN",
-      "score": 387,
-      "summary": "FDA批准首款同时监测酮体和血糖的可穿戴设备，为代谢健康管理提供新工具。开发者可基于其数据接口探索健康应用，但医疗级数据合规和准确性验证是必须重视的挑战。"
+      "summary": "OpenAI自研AI芯片Jalapeño声称性能超越Nvidia Blackwell，或重塑AI算力成本结构。对开发者而言，更便宜的推理与训练基础设施将降低大模型应用门槛，并促使云厂商和硬件生态加速竞争。",
+      "score": 476
     },
     {
       "title": "Queryable Executables",
       "url": "https://fzakaria.com/2026/08/24/actually-queryable-executables",
       "source": "HN",
-      "score": 172,
-      "summary": "文章提出可查询可执行文件的概念，让二进制本身支持SQL式查询。这对逆向工程、二进制分析和构建系统开发者有启发，可能简化程序结构探索与诊断，相关工具链值得关注。"
+      "summary": "该项目提出将可执行文件变为可查询结构，类似用SQL直接分析二进制程序，革新逆向工程与调试体验。对底层开发者、安全研究人员和运维调试场景有实际价值，扩展了常见工具链的边界。",
+      "score": 173
     },
     {
       "title": "C2PA Cameras Do Not Survive Contact with Reality",
       "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
       "source": "HN",
-      "score": 148,
-      "summary": "作者验证采用C2PA内容真实性标准的相机在真实多环境下的失效表现，指出该标准存在重大缺陷。对关注数字取证、媒体验证的开发者而言，需警惕依赖元数据真实性方案的实际脆弱性。"
+      "summary": "C2PA相机真实性认证在实际环境中被攻破，揭示数字内容溯源标准存在根本缺陷。开发者需要审慎看待“可信拍摄”与元数据签名机制，在内容安全和隐私保护之间寻找更强方案。",
+      "score": 148
     },
     {
       "title": "When str.lower() is a security vulnerability in Python",
       "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
       "source": "HN",
-      "score": 118,
-      "summary": "文章揭示Python的str.lower()在某些Unicode字符下可能导致大小写转换引发逻辑漏洞，进而成为安全风险。开发者需在身份验证、域名比较等场景谨慎处理大小写归一化，避免隐藏漏洞。"
+      "summary": "Python中str.lower()在某些Unicode字符下可能造成安全漏洞，影响密码校验、域名比较等场景。开发者应避免仅依赖大小写折叠做安全判断，并关注国际化输入处理中的边界情况。",
+      "score": 119
     },
     {
-      "title": "Maiao: Gerrit-style code review workflow for GitHub, GitLab, Gitea, others",
-      "url": "https://github.com/runetes/maiao",
-      "source": "HN",
-      "score": 78,
-      "summary": "Maiao为GitHub、GitLab、Gitea等平台提供类Gerrit的代码评审工作流。喜欢严格评审流程的团队可借此在没有Gerrit的平台上获得一致体验，简化审查与合并操作，提升协作管理效率。"
+      "title": "build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "source": "GitHub",
+      "summary": "通过从零重写数据库、Git、操作系统等经典技术来学习编程，主打“手写X”的项目式学习。对希望深入理解底层原理和提升工程能力的开发者是非常实用的免费教程集合。",
+      "score": 543055
     },
     {
-      "title": "Agentic Context Management: Memory and Cost as Architecture Problems",
-      "url": "https://arxiv.org/abs/2607.21503",
-      "source": "HN",
-      "score": 50,
-      "summary": "论文提出将智能体上下文管理和成本作为架构问题，探讨如何在长期运行中高效组织记忆与token消耗。对构建LLM Agent的开发者有参考价值，有助于设计可扩展且成本可控的上下文存储方案。"
+      "title": "openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "source": "GitHub",
+      "summary": "个人AI助手项目，支持任意操作系统和平台，强调以“龙虾方式”自主管理任务。开发者可基于它构建定制化智能体，探索本地优先、跨平台的AI自动化工作流。",
+      "score": 387674
+    },
+    {
+      "title": "superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "source": "GitHub",
+      "summary": "一个Agentic技能框架与软件开发方法论，旨在让AI智能体在实际工程中可靠协作。对采用AI编程和自动化开发的团队提供了可落地的技能组织方式，值得关注。",
+      "score": 277756
+    },
+    {
+      "title": "system-design-primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
+      "source": "GitHub",
+      "summary": "系统设计入门经典，涵盖大规模系统架构原则、案例与面试准备，配有Anki闪卡。适合开发者系统学习和求职准备，是提升架构设计能力的高质量开源资源。",
+      "score": 366098
     }
   ]
 }
