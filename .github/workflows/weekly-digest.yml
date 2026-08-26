@@ -141,7 +141,7 @@ jobs:
           print(f"\n[3/3] Calling OpenRouter ({MODEL})...")
           payload = json.dumps({
               "model": MODEL,
-              "max_tokens": 4096,
+              "max_tokens": 8192,
               "messages": [{"role": "user", "content": prompt}],
           }).encode("utf-8")
 
@@ -181,6 +181,8 @@ jobs:
               digest_items = json.loads(raw)
           except json.JSONDecodeError as exc:
               print(f"  ERROR: Could not parse model response as JSON: {exc}")
+              print(f"  RAW length={len(raw)}, finish_reason={api_result.get('choices',[{}])[0].get('finish_reason')}")
+              print(f"  RAW tail: ...{raw[-200:]}")
               print(f"  Raw preview: {raw[:400]}")
               sys.exit(1)
 
