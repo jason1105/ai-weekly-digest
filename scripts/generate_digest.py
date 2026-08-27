@@ -153,6 +153,11 @@ except json.JSONDecodeError as exc:
 
 print(f"  Claude returned {len(digest_items)} items")
 
+# 防空响应：空条目不写盘，保留上一版 latest.json（不被空覆盖）
+if not isinstance(digest_items, list) or len(digest_items) == 0:
+    print("  ERROR: 模型返回空条目，跳过写入以避免覆盖已有 digest。")
+    sys.exit(1)
+
 # ─── 5. Write _data/latest.json ───────────────────────────────
 now = datetime.datetime.utcnow()
 week_num = int(now.strftime("%W"))
