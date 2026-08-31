@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-26T09:10:14.731789Z",
-  "week": "2026 第 34 周",
+  "generated_at": "2026-08-31T16:29:28.616109Z",
+  "week": "2026 第 35 周",
   "year": 2026,
-  "week_number": 34,
+  "week_number": 35,
   "items": [
     {
-      "title": "Apple introduces M6 and M5 Ultra",
-      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+      "title": "OpenShot 4.0: Record, Edit, and Color Like Never Before",
+      "url": "https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/",
       "source": "HN",
-      "summary": "Apple发布新一代M6与M5 Ultra芯片，性能与AI算力大幅跃升，面向专业计算与端侧AI推理。开发者可借此在Mac上运行更大模型与高负载任务，并期待后续Mac产品线升级带来生产力提升。",
-      "score": 1128
+      "summary": "开源视频编辑器 OpenShot 发布 4.0，新增录制、剪辑与调色功能，界面与性能大幅提升。对内容创作者和需要可定制视频管线的开发者而言，提供了更强大的本地处理方案，值得升级体验。",
+      "score": 396
     },
     {
-      "title": "Nitter and XCancel receive cease and desist notices",
-      "url": "https://github.com/zedeus/nitter/issues/1442",
+      "title": "Breaking Claude Code Opus 5 Auto Mode",
+      "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
       "source": "HN",
-      "summary": "Nitter与XCancel收到停止函，隐私友好的Twitter替代前端和取消服务工具面临法律打压。这提醒开发者，依赖第三方平台API的工具存在脆弱性，也加剧了开源社区对网络自由和访问公共数据的担忧。",
-      "score": 914
+      "summary": "安全研究者公开了针对 Claude Code Opus 5 自动模式的越狱方法，揭示 AI 代理在复杂任务中可能被诱导执行危险操作。开发者使用 AI 编程工具时需加强沙箱与权限隔离，确保供应链安全。",
+      "score": 272
     },
     {
-      "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
-      "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+      "title": "uv: Deduplicate all files in the wheel cache",
+      "url": "https://github.com/astral-sh/uv/pull/21327",
       "source": "HN",
-      "summary": "OpenAI自研AI芯片Jalapeño声称性能超越Nvidia Blackwell，或重塑AI算力成本结构。对开发者而言，更便宜的推理与训练基础设施将降低大模型应用门槛，并促使云厂商和硬件生态加速竞争。",
-      "score": 476
+      "summary": "uv 包管理器新增 wheel 缓存去重功能，可显著减少磁盘占用并加速安装。对 Python 开发者来说，这是一次低风险高收益的优化，特别适合 CI 环境和大型 monorepo 项目。",
+      "score": 161
     },
     {
-      "title": "Queryable Executables",
-      "url": "https://fzakaria.com/2026/08/24/actually-queryable-executables",
+      "title": "ReactOS 0.4.16",
+      "url": "https://reactos.org/project-news/reactos-0416-released/",
       "source": "HN",
-      "summary": "该项目提出将可执行文件变为可查询结构，类似用SQL直接分析二进制程序，革新逆向工程与调试体验。对底层开发者、安全研究人员和运维调试场景有实际价值，扩展了常见工具链的边界。",
-      "score": 173
+      "summary": "ReactOS 发布 0.4.16，进一步提升 Windows 应用兼容性与硬件支持。作为开源 Windows 替代实现，它为测试驱动程序和旧软件提供了宝贵环境，对系统开发者和逆向工程人员有参考价值。",
+      "score": 112
     },
     {
-      "title": "C2PA Cameras Do Not Survive Contact with Reality",
-      "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
+      "title": "ChatGPT Work Tool and Skill Reference",
+      "url": "https://codex-tool-reference.simonw.chatgpt.site/",
       "source": "HN",
-      "summary": "C2PA相机真实性认证在实际环境中被攻破，揭示数字内容溯源标准存在根本缺陷。开发者需要审慎看待“可信拍摄”与元数据签名机制，在内容安全和隐私保护之间寻找更强方案。",
-      "score": 148
+      "summary": "该站点整理了 ChatGPT Work Tool 与技能的完整参考，涵盖函数调用、权限模型和提示词示例。开发者可快速查阅如何构建 AI Agent 工具，降低接入官方 API 的学习成本，提升自动化效率。",
+      "score": 82
     },
     {
-      "title": "When str.lower() is a security vulnerability in Python",
-      "url": "https://sethmlarson.dev/when-str-lower-is-a-security-vulnerability",
+      "title": "Malleable software = solid bases and custom code",
+      "url": "https://www.mdubakov.me/malleable-software-solid-bases-custom-code/",
       "source": "HN",
-      "summary": "Python中str.lower()在某些Unicode字符下可能造成安全漏洞，影响密码校验、域名比较等场景。开发者应避免仅依赖大小写折叠做安全判断，并关注国际化输入处理中的边界情况。",
-      "score": 119
+      "summary": "作者提出“可塑软件”理念：以稳定基础模块加自定义代码的方式，让用户按需改造工具。开发者可借鉴此架构思想，在 SaaS 和开源产品中提供扩展点，增强灵活性与用户粘性。",
+      "score": 63
     },
     {
-      "title": "build-your-own-x",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "source": "GitHub",
-      "summary": "通过从零重写数据库、Git、操作系统等经典技术来学习编程，主打“手写X”的项目式学习。对希望深入理解底层原理和提升工程能力的开发者是非常实用的免费教程集合。",
-      "score": 543055
+      "title": "Apache Iggy, a message streaming platform in Rust, graduates to an Apache TLP",
+      "url": "https://iggy.apache.org/blogs/2026/08/24/apache-iggy-top-level-project-tlp-graduation/",
+      "source": "HN",
+      "summary": "Rust 编写的消息流平台 Apache Iggy 正式毕业为 Apache 顶级项目。其高性能、低延迟设计适合物联网与实时数据管道，Rust 开发者可借此构建可靠的事件驱动系统，同时社区治理也更成熟。",
+      "score": 54
     },
     {
-      "title": "openclaw",
+      "title": "C++26: Standard Library Hardening Experiments",
+      "url": "https://www.cppstories.com/2026/hardening-experiments/",
+      "source": "HN",
+      "summary": "文章通过实验展示了 C++26 标准库加固选项的效果，例如自动边界检查与安全注解。对系统级开发者而言，这些特性能在不大幅损失性能的前提下提升内存安全，值得提前评估并纳入编码规范。",
+      "score": 31
+    },
+    {
+      "title": "openclaw/openclaw",
       "url": "https://github.com/openclaw/openclaw",
       "source": "GitHub",
-      "summary": "个人AI助手项目，支持任意操作系统和平台，强调以“龙虾方式”自主管理任务。开发者可基于它构建定制化智能体，探索本地优先、跨平台的AI自动化工作流。",
-      "score": 387674
+      "summary": "openclaw 是一个跨平台个人 AI 助理，支持任意操作系统，旨在成为开发者日常助手。其开源属性和高社区热度意味着可深度定制，适合想构建私有智能工作流的开发者探索。",
+      "score": 388239
     },
     {
-      "title": "superpowers",
+      "title": "obra/superpowers",
       "url": "https://github.com/obra/superpowers",
       "source": "GitHub",
-      "summary": "一个Agentic技能框架与软件开发方法论，旨在让AI智能体在实际工程中可靠协作。对采用AI编程和自动化开发的团队提供了可落地的技能组织方式，值得关注。",
-      "score": 277756
-    },
-    {
-      "title": "system-design-primer",
-      "url": "https://github.com/donnemartin/system-design-primer",
-      "source": "GitHub",
-      "summary": "系统设计入门经典，涵盖大规模系统架构原则、案例与面试准备，配有Anki闪卡。适合开发者系统学习和求职准备，是提升架构设计能力的高质量开源资源。",
-      "score": 366098
+      "summary": "superpowers 提供一套 Agentic 技能框架与软件开发方法论，帮助开发者组织 AI 代理的认知流程。它强调可复用技能和严谨的工作流，适合团队规范 AI 辅助编码过程，提高交付质量。",
+      "score": 279976
     }
   ]
 }
