@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-08-31T16:29:28.616109Z",
-  "week": "2026 第 35 周",
+  "generated_at": "2026-09-07T14:34:01.202493Z",
+  "week": "2026 第 36 周",
   "year": 2026,
-  "week_number": 35,
+  "week_number": 36,
   "items": [
     {
-      "title": "OpenShot 4.0: Record, Edit, and Color Like Never Before",
-      "url": "https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/",
+      "title": "Keep Our Servers Running",
+      "url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/",
       "source": "HN",
-      "summary": "开源视频编辑器 OpenShot 发布 4.0，新增录制、剪辑与调色功能，界面与性能大幅提升。对内容创作者和需要可定制视频管线的开发者而言，提供了更强大的本地处理方案，值得升级体验。",
-      "score": 396
+      "score": 697,
+      "summary": "互联网档案馆发起九月紧急募捐，个人捐赠将获得三倍匹配。Archive.org是开发者依赖的历史代码备份、网页快照和公共资源库，其持续运营关乎全球数字遗产与开源生态的长期可访问性。这条消息提醒社区关注基础设施维护成本，并采取实际行动支持。"
     },
     {
-      "title": "Breaking Claude Code Opus 5 Auto Mode",
-      "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+      "title": "LG smart TVs caught logging audio with screen off and snooping on local devices",
+      "url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
       "source": "HN",
-      "summary": "安全研究者公开了针对 Claude Code Opus 5 自动模式的越狱方法，揭示 AI 代理在复杂任务中可能被诱导执行危险操作。开发者使用 AI 编程工具时需加强沙箱与权限隔离，确保供应链安全。",
-      "score": 272
+      "score": 571,
+      "summary": "LG智能电视被曝在屏幕关闭时录制环境音频，并扫描局域网内设备信息。这让隐私设计再次成为焦点：智能设备应默认最小化采集，并对敏感操作提供明确告知与开关。开发者可从中反思隐私合规边界，避免产品陷入信任危机。"
     },
     {
-      "title": "uv: Deduplicate all files in the wheel cache",
-      "url": "https://github.com/astral-sh/uv/pull/21327",
+      "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
+      "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
       "source": "HN",
-      "summary": "uv 包管理器新增 wheel 缓存去重功能，可显著减少磁盘占用并加速安装。对 Python 开发者来说，这是一次低风险高收益的优化，特别适合 CI 环境和大型 monorepo 项目。",
-      "score": 161
+      "score": 344,
+      "summary": "GrapheneOS大幅重构了默认应用与安全剪贴板机制，进一步提高Android设备对恶意应用的防护。对移动安全和开源系统感兴趣的开发者值得关注：其设计思路可应用于权限隔离、敏感数据防窃取等场景，也为定制ROM和应用安全工程提供了实用参考。"
     },
     {
-      "title": "ReactOS 0.4.16",
-      "url": "https://reactos.org/project-news/reactos-0416-released/",
+      "title": "It took a year to ship WebAssembly in Anubis",
+      "url": "https://anubis.techaro.lol/blog/2026/anubis-wasm/",
       "source": "HN",
-      "summary": "ReactOS 发布 0.4.16，进一步提升 Windows 应用兼容性与硬件支持。作为开源 Windows 替代实现，它为测试驱动程序和旧软件提供了宝贵环境，对系统开发者和逆向工程人员有参考价值。",
-      "score": 112
+      "score": 309,
+      "summary": "作者回顾了将WebAssembly完整引入Anubis所经历的一年历程，包括Wasm模块设计、宿主集成、兼容性处理和性能调试。文章展示了在真实基础设施中落地Wasm的复杂性与折衷，对系统编程、网络服务和嵌入式运行时的开发者极具借鉴价值。"
     },
     {
-      "title": "ChatGPT Work Tool and Skill Reference",
-      "url": "https://codex-tool-reference.simonw.chatgpt.site/",
+      "title": "Making a Python interpreter in 1024 bytes",
+      "url": "https://austinhenley.com/blog/python1024.html",
       "source": "HN",
-      "summary": "该站点整理了 ChatGPT Work Tool 与技能的完整参考，涵盖函数调用、权限模型和提示词示例。开发者可快速查阅如何构建 AI Agent 工具，降低接入官方 API 的学习成本，提升自动化效率。",
-      "score": 82
+      "score": 268,
+      "summary": "作者用1024字节写出了精简版Python解释器，涵盖词法分析、解析、执行和运行时核心机制。这个微型项目既是对语言本质的深度拆解，也是极简代码与算法设计的有趣实验。对编程语言爱好者和想理解解释器工作的开发者很有启发。"
     },
     {
-      "title": "Malleable software = solid bases and custom code",
-      "url": "https://www.mdubakov.me/malleable-software-solid-bases-custom-code/",
+      "title": "Speculative Decoding in vLLM on AMD GPUs",
+      "url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
       "source": "HN",
-      "summary": "作者提出“可塑软件”理念：以稳定基础模块加自定义代码的方式，让用户按需改造工具。开发者可借鉴此架构思想，在 SaaS 和开源产品中提供扩展点，增强灵活性与用户粘性。",
-      "score": 63
+      "score": 63,
+      "summary": "vLLM在AMD GPU上实现了推测解码支持，可减少生成式大模型的推理延迟并提高吞吐量。对使用AMD算力部署大语言模型的开发者来说，这意味着更低的成本和更优的响应性能。文章还讨论了硬件适配、采样一致性与调度细节，是推理优化的实用参考。"
     },
     {
-      "title": "Apache Iggy, a message streaming platform in Rust, graduates to an Apache TLP",
-      "url": "https://iggy.apache.org/blogs/2026/08/24/apache-iggy-top-level-project-tlp-graduation/",
+      "title": "Apparently CodePen 2.0 sends data to their servers as you type",
+      "url": "https://news.ycombinator.com/item?id=49596976",
       "source": "HN",
-      "summary": "Rust 编写的消息流平台 Apache Iggy 正式毕业为 Apache 顶级项目。其高性能、低延迟设计适合物联网与实时数据管道，Rust 开发者可借此构建可靠的事件驱动系统，同时社区治理也更成熟。",
-      "score": 54
+      "score": 65,
+      "summary": "CodePen 2.0被发现会在输入过程中将数据发送到服务器，引发开发者对云端编辑器隐私与网络开销的担忧。该讨论提醒大家重新审视“自动保存/同步”与用户控制权之间的平衡。对于使用云IDE和前端在线工具的人，有必要弄清远程上传机制。"
     },
     {
-      "title": "C++26: Standard Library Hardening Experiments",
-      "url": "https://www.cppstories.com/2026/hardening-experiments/",
-      "source": "HN",
-      "summary": "文章通过实验展示了 C++26 标准库加固选项的效果，例如自动边界检查与安全注解。对系统级开发者而言，这些特性能在不大幅损失性能的前提下提升内存安全，值得提前评估并纳入编码规范。",
-      "score": 31
-    },
-    {
-      "title": "openclaw/openclaw",
-      "url": "https://github.com/openclaw/openclaw",
+      "title": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
       "source": "GitHub",
-      "summary": "openclaw 是一个跨平台个人 AI 助理，支持任意操作系统，旨在成为开发者日常助手。其开源属性和高社区热度意味着可深度定制，适合想构建私有智能工作流的开发者探索。",
-      "score": 388239
+      "score": 545764,
+      "summary": "超过54万星的经典学习资源，汇总了从零重写Redis、Git、数据库、操作系统等项目的教程。它引导开发者摆脱“只会调用API”，通过亲手实现经典技术来掌握底层原理。无论新手还是熟练工程师，都是重建计算机知识的绝佳路线。"
     },
     {
-      "title": "obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
+      "title": "donnemartin/system-design-primer",
+      "url": "https://github.com/donnemartin/system-design-primer",
       "source": "GitHub",
-      "summary": "superpowers 提供一套 Agentic 技能框架与软件开发方法论，帮助开发者组织 AI 代理的认知流程。它强调可复用技能和严谨的工作流，适合团队规范 AI 辅助编码过程，提高交付质量。",
-      "score": 279976
+      "score": 368498,
+      "summary": "面向大规模系统设计的开源学习库，覆盖一致性、负载均衡、缓存、数据库与消息队列等核心概念，并配备Anki卡片帮助记忆。它既是系统设计面试的备考利器，也是开发者理解分布式架构、提升工程视野的高质量教材。"
+    },
+    {
+      "title": "awesome-selfhosted/awesome-selfhosted",
+      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+      "source": "GitHub",
+      "score": 317685,
+      "summary": "收录了可自托管的免费软件网络服务与Web应用，覆盖文件同步、博客、数据库、监控等场景。该项目帮助开发者在无需云服务商的情况下掌握自己的数据，既能用于开发测试或内部工具，也能为隐私敏感的架构方案提供开源替代选择。"
     }
   ]
 }
