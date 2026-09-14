@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-07T14:34:01.202493Z",
-  "week": "2026 第 36 周",
+  "generated_at": "2026-09-14T15:22:29.051216Z",
+  "week": "2026 第 37 周",
   "year": 2026,
-  "week_number": 36,
+  "week_number": 37,
   "items": [
     {
-      "title": "Keep Our Servers Running",
-      "url": "https://blog.archive.org/2026/09/01/keep-our-servers-running-your-recurring-donation-goes-3x-this-september/",
+      "title": "How to Write an Effective Software Design Document",
+      "url": "https://refactoringenglish.com/excerpts/write-an-effective-design-doc/",
       "source": "HN",
-      "score": 697,
-      "summary": "互联网档案馆发起九月紧急募捐，个人捐赠将获得三倍匹配。Archive.org是开发者依赖的历史代码备份、网页快照和公共资源库，其持续运营关乎全球数字遗产与开源生态的长期可访问性。这条消息提醒社区关注基础设施维护成本，并采取实际行动支持。"
+      "summary": "系统讲解如何写出可执行的设计文档：从问题陈述、目标与非目标、方案取舍到评审迭代，强调文档服务于决策而非形式。对需要推动跨团队协作的开发者，能显著减少返工与沟通成本。",
+      "score": 141
     },
     {
-      "title": "LG smart TVs caught logging audio with screen off and snooping on local devices",
-      "url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
+      "title": "Notes on gotchas while migrating 35kb preprompts from Opus to self-hosted Ollama",
+      "url": "https://patrickmccanna.net/notes-on-migrating-large-prompts-away-from-anthropic-openai-to-self-hosted-llms/",
       "source": "HN",
-      "score": 571,
-      "summary": "LG智能电视被曝在屏幕关闭时录制环境音频，并扫描局域网内设备信息。这让隐私设计再次成为焦点：智能设备应默认最小化采集，并对敏感操作提供明确告知与开关。开发者可从中反思隐私合规边界，避免产品陷入信任危机。"
+      "summary": "作者把 35KB 大预提示从 Opus/OpenAI 迁移到自托管 Ollama，记录上下文窗口、提示格式、性能与成本等坑。对想降低 API 依赖、做本地模型部署的团队，是一份少见的实战避坑指南。",
+      "score": 31
     },
     {
-      "title": "GrapheneOS Overhauled Default Apps and Secure Clipboard",
-      "url": "https://grapheneos.social/@GrapheneOS/117225539756835649",
+      "title": "The AI job market in 2026",
+      "url": "https://www.ilinmaks.com/blog/en/ai-jobs-market-2026",
       "source": "HN",
-      "score": 344,
-      "summary": "GrapheneOS大幅重构了默认应用与安全剪贴板机制，进一步提高Android设备对恶意应用的防护。对移动安全和开源系统感兴趣的开发者值得关注：其设计思路可应用于权限隔离、敏感数据防窃取等场景，也为定制ROM和应用安全工程提供了实用参考。"
+      "summary": "分析 2026 年 AI 岗位需求变化：基础调参岗降温，懂推理优化、数据工程与产品落地的复合人才更稀缺。开发者可据此调整技能栈，把模型能力转化为可交付系统。",
+      "score": 42
     },
     {
-      "title": "It took a year to ship WebAssembly in Anubis",
-      "url": "https://anubis.techaro.lol/blog/2026/anubis-wasm/",
+      "title": "RubyGems Open Source Supply Chain Security and OpenAI",
+      "url": "https://rietta.com/blog/rubygems-supply-chain-openai/",
       "source": "HN",
-      "score": 309,
-      "summary": "作者回顾了将WebAssembly完整引入Anubis所经历的一年历程，包括Wasm模块设计、宿主集成、兼容性处理和性能调试。文章展示了在真实基础设施中落地Wasm的复杂性与折衷，对系统编程、网络服务和嵌入式运行时的开发者极具借鉴价值。"
+      "summary": "从 RubyGems 生态切入，讨论开源供应链攻击面、依赖审计与 OpenAI 相关工具在安全检测中的可能作用。提醒开发者重视包管理链路，别把可信安装当作默认前提。",
+      "score": 16
     },
     {
-      "title": "Making a Python interpreter in 1024 bytes",
-      "url": "https://austinhenley.com/blog/python1024.html",
+      "title": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
+      "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/",
       "source": "HN",
-      "score": 268,
-      "summary": "作者用1024字节写出了精简版Python解释器，涵盖词法分析、解析、执行和运行时核心机制。这个微型项目既是对语言本质的深度拆解，也是极简代码与算法设计的有趣实验。对编程语言爱好者和想理解解释器工作的开发者很有启发。"
+      "summary": "代码显示苹果 Siri 的 AI 后端可能可切换为 Claude、ChatGPT 等第三方模型，意味着系统级助理走向开放集成。对开发者，未来或可用统一接口接入不同模型，降低平台绑定风险。",
+      "score": 163
     },
     {
-      "title": "Speculative Decoding in vLLM on AMD GPUs",
-      "url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
+      "title": "New $100K H-1B Visa Fee Pushes Tech Jobs Offshore",
+      "url": "https://spectrum.ieee.org/h-1b-visa-us-government",
       "source": "HN",
-      "score": 63,
-      "summary": "vLLM在AMD GPU上实现了推测解码支持，可减少生成式大模型的推理延迟并提高吞吐量。对使用AMD算力部署大语言模型的开发者来说，这意味着更低的成本和更优的响应性能。文章还讨论了硬件适配、采样一致性与调度细节，是推理优化的实用参考。"
+      "summary": "报道 10 万美元 H-1B 费用如何推高科技岗位离岸外包。对依赖国际招聘的团队和求职者，这意味着成本、签证与远程协作策略都需重新评估，影响人才流动与薪资结构。",
+      "score": 105
     },
     {
-      "title": "Apparently CodePen 2.0 sends data to their servers as you type",
-      "url": "https://news.ycombinator.com/item?id=49596976",
+      "title": "SDR–; open source SDR with a patchable signal graph, Rust DSP, web UI",
+      "url": "https://github.com/Newspicel/sdrminusminus",
       "source": "HN",
-      "score": 65,
-      "summary": "CodePen 2.0被发现会在输入过程中将数据发送到服务器，引发开发者对云端编辑器隐私与网络开销的担忧。该讨论提醒大家重新审视“自动保存/同步”与用户控制权之间的平衡。对于使用云IDE和前端在线工具的人，有必要弄清远程上传机制。"
+      "summary": "开源软件定义无线电项目，提供可连线信号图、Rust DSP 与 Web UI，把 SDR 实验搬进浏览器。适合通信、射频和嵌入式开发者快速验证想法，也展示 Rust 在实时信号处理中的潜力。",
+      "score": 24
     },
     {
-      "title": "codecrafters-io/build-your-own-x",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "title": "Understanding FlashAttention Pt 1: Personal Notes",
+      "url": "https://chizkidd.github.io//2026/09/13/flashattention/",
+      "source": "HN",
+      "summary": "以个人笔记形式拆解 FlashAttention 的动机、分块计算与 IO 优化，帮助理解注意力机制为何受显存和带宽限制。对想深入 AI 推理优化的开发者，是补齐底层认知的入门材料。",
+      "score": 10
+    },
+    {
+      "title": "[TypeScript] openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "url": "https://github.com/openclaw/openclaw",
       "source": "GitHub",
-      "score": 545764,
-      "summary": "超过54万星的经典学习资源，汇总了从零重写Redis、Git、数据库、操作系统等项目的教程。它引导开发者摆脱“只会调用API”，通过亲手实现经典技术来掌握底层原理。无论新手还是熟练工程师，都是重建计算机知识的绝佳路线。"
+      "summary": "高星 AI 代理项目，宣称可在任意操作系统与平台执行真实任务，强调跨平台自动化。对想构建或集成自主代理的开发者，可研究其任务编排、工具调用与安全边界设计。",
+      "score": 389661
     },
     {
-      "title": "donnemartin/system-design-primer",
-      "url": "https://github.com/donnemartin/system-design-primer",
+      "title": "[Shell] obra/superpowers -- An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
       "source": "GitHub",
-      "score": 368498,
-      "summary": "面向大规模系统设计的开源学习库，覆盖一致性、负载均衡、缓存、数据库与消息队列等核心概念，并配备Anki卡片帮助记忆。它既是系统设计面试的备考利器，也是开发者理解分布式架构、提升工程视野的高质量教材。"
-    },
-    {
-      "title": "awesome-selfhosted/awesome-selfhosted",
-      "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
-      "source": "GitHub",
-      "score": 317685,
-      "summary": "收录了可自托管的免费软件网络服务与Web应用，覆盖文件同步、博客、数据库、监控等场景。该项目帮助开发者在无需云服务商的情况下掌握自己的数据，既能用于开发测试或内部工具，也能为隐私敏感的架构方案提供开源替代选择。"
+      "summary": "面向智能体开发的技能框架与工程方法论，试图把代理能力拆成可复用技能并嵌入开发流程。对探索 AI 辅助软件工程的团队，可借鉴其技能组织、评测与协作模式。",
+      "score": 286540
     }
   ]
 }
