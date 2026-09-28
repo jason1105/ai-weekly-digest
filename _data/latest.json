@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-14T15:22:29.051216Z",
-  "week": "2026 第 37 周",
+  "generated_at": "2026-09-28T17:08:22.695973Z",
+  "week": "2026 第 39 周",
   "year": 2026,
-  "week_number": 37,
+  "week_number": 39,
   "items": [
     {
-      "title": "How to Write an Effective Software Design Document",
-      "url": "https://refactoringenglish.com/excerpts/write-an-effective-design-doc/",
+      "title": "When did Google get so weird?",
+      "url": "https://sancho.bearblog.dev/google-weird/",
       "source": "HN",
-      "summary": "系统讲解如何写出可执行的设计文档：从问题陈述、目标与非目标、方案取舍到评审迭代，强调文档服务于决策而非形式。对需要推动跨团队协作的开发者，能显著减少返工与沟通成本。",
-      "score": 141
+      "summary": "谷歌近年搜索、产品与 AI 策略让不少开发者感到陌生。文章回顾其行为变化，讨论平台封闭、搜索结果质量与产品重心转移。对依赖 Google 搜索、云服务和广告生态的开发者，理解这些变化有助于评估平台依赖与迁移风险。",
+      "score": 1636
     },
     {
-      "title": "Notes on gotchas while migrating 35kb preprompts from Opus to self-hosted Ollama",
-      "url": "https://patrickmccanna.net/notes-on-migrating-large-prompts-away-from-anthropic-openai-to-self-hosted-llms/",
+      "title": "Owed a billion dollars in Nvidia stock",
+      "url": "https://colo.to/nvidia-stock-narrative.html",
       "source": "HN",
-      "summary": "作者把 35KB 大预提示从 Opus/OpenAI 迁移到自托管 Ollama，记录上下文窗口、提示格式、性能与成本等坑。对想降低 API 依赖、做本地模型部署的团队，是一份少见的实战避坑指南。",
-      "score": 31
+      "summary": "文章围绕英伟达股票与薪酬叙事展开，讨论员工持有巨额未兑现股票的收益与风险。它值得 AI 和芯片从业者关注，因为股权激励正成为吸引人才的重要杠杆，也提醒开发者别忽视集中持仓与市场波动带来的财务风险。",
+      "score": 980
     },
     {
-      "title": "The AI job market in 2026",
-      "url": "https://www.ilinmaks.com/blog/en/ai-jobs-market-2026",
+      "title": "Ember-1",
+      "url": "https://fireworks.ai/blog/ember-1",
       "source": "HN",
-      "summary": "分析 2026 年 AI 岗位需求变化：基础调参岗降温，懂推理优化、数据工程与产品落地的复合人才更稀缺。开发者可据此调整技能栈，把模型能力转化为可交付系统。",
-      "score": 42
+      "summary": "Fireworks AI 发布 Ember-1，预计与其模型推理或开发者服务能力相关。对开发者而言，重点在于它能否降低大模型部署成本、提升吞吐并简化 API 接入；若团队正评估推理基础设施，这类新方案值得跟进测试与基准对比。",
+      "score": 556
     },
     {
-      "title": "RubyGems Open Source Supply Chain Security and OpenAI",
-      "url": "https://rietta.com/blog/rubygems-supply-chain-openai/",
+      "title": "Coding Is Not Solved",
+      "url": "https://blog.alexewerlof.com/p/coding-is-not-solved",
       "source": "HN",
-      "summary": "从 RubyGems 生态切入，讨论开源供应链攻击面、依赖审计与 OpenAI 相关工具在安全检测中的可能作用。提醒开发者重视包管理链路，别把可信安装当作默认前提。",
-      "score": 16
+      "summary": "文章反驳编码已被 AI 解决的论调，指出真实软件开发仍受需求模糊、系统复杂性与维护成本制约。开发者应把 AI 当增强工具而非替代品，关注架构、调试与协作能力，避免被营销话术误导。",
+      "score": 281
     },
     {
-      "title": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
-      "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/",
+      "title": "Parley: Federated, decentralised chat that speaks plain IRC",
+      "url": "https://git.mills.io/prologic/parley",
       "source": "HN",
-      "summary": "代码显示苹果 Siri 的 AI 后端可能可切换为 Claude、ChatGPT 等第三方模型，意味着系统级助理走向开放集成。对开发者，未来或可用统一接口接入不同模型，降低平台绑定风险。",
-      "score": 163
+      "summary": "Parley 是联邦化、去中心化聊天项目，同时兼容传统 IRC 协议。它值得关注，因为为不想被单一平台锁定的团队提供开放通信方案。开发者可自托管、参与协议扩展，或将其作为 IRC 与现代聊天桥接的参考实现。",
+      "score": 231
     },
     {
-      "title": "New $100K H-1B Visa Fee Pushes Tech Jobs Offshore",
-      "url": "https://spectrum.ieee.org/h-1b-visa-us-government",
+      "title": "The problem is not the AI code, but nobody knows anything anymore",
+      "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
       "source": "HN",
-      "summary": "报道 10 万美元 H-1B 费用如何推高科技岗位离岸外包。对依赖国际招聘的团队和求职者，这意味着成本、签证与远程协作策略都需重新评估，影响人才流动与薪资结构。",
-      "score": 105
+      "summary": "文章认为 AI 生成代码不是最大问题，真正危机是团队对系统知识逐渐失焦。开发者若只依赖模型产出，会削弱代码理解、评审与传承。它提醒团队建立文档、可观测性和知识共享机制，否则维护成本会持续上升。",
+      "score": 182
     },
     {
-      "title": "SDR–; open source SDR with a patchable signal graph, Rust DSP, web UI",
-      "url": "https://github.com/Newspicel/sdrminusminus",
+      "title": "Footguns with Postgres \"at time zone 'UTC'\"",
+      "url": "https://bookofrevenue.com/blog/6ab81e9a97a13f0001f7e4e1/postgres-at-time-zone-u-does-not-do-what-you-think-it-does",
       "source": "HN",
-      "summary": "开源软件定义无线电项目，提供可连线信号图、Rust DSP 与 Web UI，把 SDR 实验搬进浏览器。适合通信、射频和嵌入式开发者快速验证想法，也展示 Rust 在实时信号处理中的潜力。",
-      "score": 24
+      "summary": "文章剖析 PostgreSQL 中 at time zone 'UTC' 的常见误区，尤其是 timestamp 与 timestamptz 的语义差异和时区转换陷阱。对后端开发者很实用，可避免生产环境时间错乱、统计偏差和隐蔽 bug。",
+      "score": 126
     },
     {
-      "title": "Understanding FlashAttention Pt 1: Personal Notes",
-      "url": "https://chizkidd.github.io//2026/09/13/flashattention/",
-      "source": "HN",
-      "summary": "以个人笔记形式拆解 FlashAttention 的动机、分块计算与 IO 优化，帮助理解注意力机制为何受显存和带宽限制。对想深入 AI 推理优化的开发者，是补齐底层认知的入门材料。",
-      "score": 10
-    },
-    {
-      "title": "[TypeScript] openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "title": "openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
       "url": "https://github.com/openclaw/openclaw",
       "source": "GitHub",
-      "summary": "高星 AI 代理项目，宣称可在任意操作系统与平台执行真实任务，强调跨平台自动化。对想构建或集成自主代理的开发者，可研究其任务编排、工具调用与安全边界设计。",
-      "score": 389661
+      "summary": "openclaw 定位为真正能执行任务的 AI，跨操作系统与平台运行。它值得开发者关注，因为展示开源 AI Agent 如何接入真实环境并完成操作。若你在探索自动化、桌面代理或跨平台工具集成，可研究其架构与权限安全设计。",
+      "score": 390717
     },
     {
-      "title": "[Shell] obra/superpowers -- An agentic skills framework & software development methodology that works.",
+      "title": "obra/superpowers -- An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
       "source": "GitHub",
-      "summary": "面向智能体开发的技能框架与工程方法论，试图把代理能力拆成可复用技能并嵌入开发流程。对探索 AI 辅助软件工程的团队，可借鉴其技能组织、评测与协作模式。",
-      "score": 286540
+      "summary": "Superpowers 提供 agentic skills 框架与软件开发方法论，试图让 AI 代理更可靠地参与工程流程。对开发者而言，它可作为构建自定义代理、规范技能与协作模式的参考，帮助把 AI 编码从演示推进到可复用工程实践。",
+      "score": 292437
+    },
+    {
+      "title": "codecrafters-io/build-your-own-x -- Master programming by recreating your favorite technologies from scratch.",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "source": "GitHub",
+      "summary": "该项目汇总从零重建数据库、编译器、操作系统等技术的教程，是理解底层原理的经典路线。对开发者来说，它比只看文档更能训练系统设计能力，也适合作为 AI 时代巩固基础、提升调试与架构判断力的学习资源。",
+      "score": 550373
     }
   ]
 }
