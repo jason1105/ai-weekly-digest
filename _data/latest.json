@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-09-28T17:08:22.695973Z",
-  "week": "2026 第 39 周",
+  "generated_at": "2026-10-05T17:33:06.665724Z",
+  "week": "2026 第 40 周",
   "year": 2026,
-  "week_number": 39,
+  "week_number": 40,
   "items": [
     {
-      "title": "When did Google get so weird?",
-      "url": "https://sancho.bearblog.dev/google-weird/",
+      "title": "Web Search API",
+      "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
       "source": "HN",
-      "summary": "谷歌近年搜索、产品与 AI 策略让不少开发者感到陌生。文章回顾其行为变化，讨论平台封闭、搜索结果质量与产品重心转移。对依赖 Google 搜索、云服务和广告生态的开发者，理解这些变化有助于评估平台依赖与迁移风险。",
-      "score": 1636
+      "summary": "Cloudflare 推出 Web Search API，为 Workers 与 AI 代理提供可编程网页搜索，简化 RAG 和实时信息获取。开发者无需自建爬虫与索引，即可构建搜索增强应用，但需评估定价、延迟、区域覆盖和隐私合规。",
+      "score": 288
     },
     {
-      "title": "Owed a billion dollars in Nvidia stock",
-      "url": "https://colo.to/nvidia-stock-narrative.html",
+      "title": "Mold Linker Version 3.0.0 Release – Rewritten in Rust",
+      "url": "https://github.com/rui314/mold/releases/tag/v3.0.0",
       "source": "HN",
-      "summary": "文章围绕英伟达股票与薪酬叙事展开，讨论员工持有巨额未兑现股票的收益与风险。它值得 AI 和芯片从业者关注，因为股权激励正成为吸引人才的重要杠杆，也提醒开发者别忽视集中持仓与市场波动带来的财务风险。",
-      "score": 980
+      "summary": "mold 3.0.0 发布，核心改用 Rust 重写，保持高速链接并提升可维护性与安全性。对大型 C/C++/Rust 项目而言，可显著缩短链接时间；建议在 CI 和本地构建中评估替换 lld/GNU ld，关注兼容性与新回归。",
+      "score": 123
     },
     {
-      "title": "Ember-1",
-      "url": "https://fireworks.ai/blog/ember-1",
+      "title": "Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped",
+      "url": "https://discuss.grapheneos.org/d/41564-pixel-11-doesnt-yet-meet-the-grapheneos-security-standards-and-may-be-skipped",
       "source": "HN",
-      "summary": "Fireworks AI 发布 Ember-1，预计与其模型推理或开发者服务能力相关。对开发者而言，重点在于它能否降低大模型部署成本、提升吞吐并简化 API 接入；若团队正评估推理基础设施，这类新方案值得跟进测试与基准对比。",
-      "score": 556
+      "summary": "GrapheneOS 表示 Pixel 11 暂未满足其安全标准，可能跳过适配，涉及硬件安全、验证启动与解锁机制。对重视隐私安全的 Android 开发者，选机与长期系统维护受影响，也再次凸显厂商驱动和固件支持的重要性。",
+      "score": 295
     },
     {
-      "title": "Coding Is Not Solved",
-      "url": "https://blog.alexewerlof.com/p/coding-is-not-solved",
+      "title": "Denmark Data Breach Exposes 8.8M People's Personal Data",
+      "url": "https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger",
       "source": "HN",
-      "summary": "文章反驳编码已被 AI 解决的论调，指出真实软件开发仍受需求模糊、系统复杂性与维护成本制约。开发者应把 AI 当增强工具而非替代品，关注架构、调试与协作能力，避免被营销话术误导。",
-      "score": 281
+      "summary": "丹麦 CPR 登记系统遭未授权访问，约 880 万人个人数据泄露，几乎覆盖全国人口。事件提醒开发者身份系统、API 权限、审计日志与供应链安全的重要性，欧洲用户数据合规和信任修复成本将很高。",
+      "score": 373
     },
     {
-      "title": "Parley: Federated, decentralised chat that speaks plain IRC",
-      "url": "https://git.mills.io/prologic/parley",
+      "title": "We ported the original Doom to SQL",
+      "url": "https://cedardb.com/blog/sqldoom/",
       "source": "HN",
-      "summary": "Parley 是联邦化、去中心化聊天项目，同时兼容传统 IRC 协议。它值得关注，因为为不想被单一平台锁定的团队提供开放通信方案。开发者可自托管、参与协议扩展，或将其作为 IRC 与现代聊天桥接的参考实现。",
-      "score": 231
+      "summary": "CedarDB 将原版 Doom 移植到 SQL 中运行，用查询语言驱动游戏逻辑与渲染循环。它虽是极客实验，却展示数据库执行复杂计算的可能，适合开发者理解查询执行、UDF、性能边界和 SQL 的另类用途。",
+      "score": 262
     },
     {
-      "title": "The problem is not the AI code, but nobody knows anything anymore",
-      "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
+      "title": "Type Safe Generic Data Structures in C",
+      "url": "https://danielchasehooper.com/posts/typechecked-generic-c-data-structures/",
       "source": "HN",
-      "summary": "文章认为 AI 生成代码不是最大问题，真正危机是团队对系统知识逐渐失焦。开发者若只依赖模型产出，会削弱代码理解、评审与传承。它提醒团队建立文档、可观测性和知识共享机制，否则维护成本会持续上升。",
-      "score": 182
+      "summary": "文章讲解如何在 C 中实现类型安全的泛型数据结构，利用宏、_Generic 和编译期检查，避免 void* 带来的类型错误。对系统与嵌入式开发者，这能在保持零开销的同时提升抽象安全性和代码复用。",
+      "score": 106
     },
     {
-      "title": "Footguns with Postgres \"at time zone 'UTC'\"",
-      "url": "https://bookofrevenue.com/blog/6ab81e9a97a13f0001f7e4e1/postgres-at-time-zone-u-does-not-do-what-you-think-it-does",
+      "title": "Anthropic reported diary entry to police, woman faces felony charge",
+      "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
       "source": "HN",
-      "summary": "文章剖析 PostgreSQL 中 at time zone 'UTC' 的常见误区，尤其是 timestamp 与 timestamptz 的语义差异和时区转换陷阱。对后端开发者很实用，可避免生产环境时间错乱、统计偏差和隐蔽 bug。",
-      "score": 126
+      "summary": "佛罗里达女子据称用 Claude 写日记，Anthropic 将其内容报告给警方，导致她面临重罪指控。事件引发 AI 平台隐私、内容审查和强制报告边界讨论；开发者需重新审视日志留存、用户告知与合规策略。",
+      "score": 107
+    },
+    {
+      "title": "Germany’s RobCo hits $1B valuation",
+      "url": "https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/",
+      "source": "HN",
+      "summary": "德国机器人公司 RobCo 估值达 10 亿美元，主打模块化工业机器人，降低自动化部署门槛。对开发者而言，机器人 OS、低代码编程、边缘 AI 与工业软件集成机会增加，值得关注 AI 与制造业结合趋势。",
+      "score": 302
     },
     {
       "title": "openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
       "url": "https://github.com/openclaw/openclaw",
       "source": "GitHub",
-      "summary": "openclaw 定位为真正能执行任务的 AI，跨操作系统与平台运行。它值得开发者关注，因为展示开源 AI Agent 如何接入真实环境并完成操作。若你在探索自动化、桌面代理或跨平台工具集成，可研究其架构与权限安全设计。",
-      "score": 390717
+      "summary": "openclaw 是跨平台 AI 代理开源项目，宣称可在任意操作系统和平台执行真实任务。它代表 AI Agent 从聊天走向自动化操作的趋势，开发者可研究其工具调用、权限隔离和插件生态，但需注意安全边界。",
+      "score": 391425
     },
     {
       "title": "obra/superpowers -- An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
       "source": "GitHub",
-      "summary": "Superpowers 提供 agentic skills 框架与软件开发方法论，试图让 AI 代理更可靠地参与工程流程。对开发者而言，它可作为构建自定义代理、规范技能与协作模式的参考，帮助把 AI 编码从演示推进到可复用工程实践。",
-      "score": 292437
-    },
-    {
-      "title": "codecrafters-io/build-your-own-x -- Master programming by recreating your favorite technologies from scratch.",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "source": "GitHub",
-      "summary": "该项目汇总从零重建数据库、编译器、操作系统等技术的教程，是理解底层原理的经典路线。对开发者来说，它比只看文档更能训练系统设计能力，也适合作为 AI 时代巩固基础、提升调试与架构判断力的学习资源。",
-      "score": 550373
+      "summary": "obra/superpowers 提供面向 AI 代理的技能框架与软件开发方法论，帮助把代理能力组织成可复用工作流。对采用 Copilot、Claude Code 等工具的团队，它可能改善任务分解、上下文管理和协作规范。",
+      "score": 295565
     }
   ]
 }
