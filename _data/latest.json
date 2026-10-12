@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-10-05T17:33:06.665724Z",
-  "week": "2026 第 40 周",
+  "generated_at": "2026-10-12T18:19:56.229754Z",
+  "week": "2026 第 41 周",
   "year": 2026,
-  "week_number": 40,
+  "week_number": 41,
   "items": [
     {
-      "title": "Web Search API",
-      "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
+      "title": "The gap in shared understanding of LLM capability is widening",
+      "url": "https://twitter.com/karpathy/status/2109361546505966046",
       "source": "HN",
-      "summary": "Cloudflare 推出 Web Search API，为 Workers 与 AI 代理提供可编程网页搜索，简化 RAG 和实时信息获取。开发者无需自建爬虫与索引，即可构建搜索增强应用，但需评估定价、延迟、区域覆盖和隐私合规。",
-      "score": 288
+      "summary": "Karpathy 指出业界对大模型能力的共同理解正在分裂：有人看到通用智能，有人只看到昂贵自动补全。开发者应建立自己的任务评测，关注真实成功率、成本与失败模式，避免被演示和炒作误导。",
+      "score": 629
     },
     {
-      "title": "Mold Linker Version 3.0.0 Release – Rewritten in Rust",
-      "url": "https://github.com/rui314/mold/releases/tag/v3.0.0",
+      "title": "Fingerprints are the new cookies",
+      "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
       "source": "HN",
-      "summary": "mold 3.0.0 发布，核心改用 Rust 重写，保持高速链接并提升可维护性与安全性。对大型 C/C++/Rust 项目而言，可显著缩短链接时间；建议在 CI 和本地构建中评估替换 lld/GNU ld，关注兼容性与新回归。",
-      "score": 123
+      "summary": "浏览器指纹正取代第三方 Cookie，成为跨站追踪和风控的核心手段。Web 开发者需重新评估分析、广告、登录与反欺诈方案，采用同意管理、隐私沙盒和服务端策略，降低合规与用户信任风险。",
+      "score": 646
     },
     {
-      "title": "Pixel 11 doesn't yet meet the GrapheneOS security standards and may be skipped",
-      "url": "https://discuss.grapheneos.org/d/41564-pixel-11-doesnt-yet-meet-the-grapheneos-security-standards-and-may-be-skipped",
+      "title": "Total Annihilation, rebuilt for modern computers",
+      "url": "https://nanolathe.gg",
       "source": "HN",
-      "summary": "GrapheneOS 表示 Pixel 11 暂未满足其安全标准，可能跳过适配，涉及硬件安全、验证启动与解锁机制。对重视隐私安全的 Android 开发者，选机与长期系统维护受影响，也再次凸显厂商驱动和固件支持的重要性。",
-      "score": 295
+      "summary": "经典 RTS《横扫千军》被社区重制并适配现代电脑，保留原玩法，改进兼容性、渲染和多人体验。它展示开源逆向工程如何延续老游戏生命，对跨平台桌面、资源管线与社区维护项目有参考价值。",
+      "score": 636
     },
     {
-      "title": "Denmark Data Breach Exposes 8.8M People's Personal Data",
-      "url": "https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger",
+      "title": "GLM-Legal",
+      "url": "https://z.ai/blog/glm-legal",
       "source": "HN",
-      "summary": "丹麦 CPR 登记系统遭未授权访问，约 880 万人个人数据泄露，几乎覆盖全国人口。事件提醒开发者身份系统、API 权限、审计日志与供应链安全的重要性，欧洲用户数据合规和信任修复成本将很高。",
-      "score": 373
+      "summary": "智谱发布面向法律领域的 GLM-Legal，可能覆盖法律问答、文书审查和合规检索。垂直模型能降低专业场景幻觉与部署门槛。开发者可关注 API、评测基准和私有化方案，评估合同与法务自动化集成机会。",
+      "score": 204
     },
     {
-      "title": "We ported the original Doom to SQL",
-      "url": "https://cedardb.com/blog/sqldoom/",
+      "title": "Show HN: PS2 games statically recompiled to WebAssembly",
+      "url": "https://github.com/snuri00/ps2-web-recomp",
       "source": "HN",
-      "summary": "CedarDB 将原版 Doom 移植到 SQL 中运行，用查询语言驱动游戏逻辑与渲染循环。它虽是极客实验，却展示数据库执行复杂计算的可能，适合开发者理解查询执行、UDF、性能边界和 SQL 的另类用途。",
-      "score": 262
+      "summary": "该项目把 PS2 游戏静态重编译为 WebAssembly，使经典主机游戏有望直接在浏览器运行。它结合反编译、重编译与 WASM 沙箱，展示旧平台代码迁移潜力，对模拟器、游戏移植和浏览器高性能计算有启发。",
+      "score": 209
     },
     {
-      "title": "Type Safe Generic Data Structures in C",
-      "url": "https://danielchasehooper.com/posts/typechecked-generic-c-data-structures/",
+      "title": "Type-safe HTML templating in Zig",
+      "url": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
       "source": "HN",
-      "summary": "文章讲解如何在 C 中实现类型安全的泛型数据结构，利用宏、_Generic 和编译期检查，避免 void* 带来的类型错误。对系统与嵌入式开发者，这能在保持零开销的同时提升抽象安全性和代码复用。",
-      "score": 106
+      "summary": "文章展示如何在 Zig 中实现类型安全 HTML 模板，让编译期捕获标签、属性和转义错误。对追求性能与安全的 Web 后端有吸引力，也为 Zig 生态补齐实用 Web 组件，值得关注其实现思路与库化进展。",
+      "score": 207
     },
     {
-      "title": "Anthropic reported diary entry to police, woman faces felony charge",
-      "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
+      "title": "AI coding agents generate more code, but not more software",
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
       "source": "HN",
-      "summary": "佛罗里达女子据称用 Claude 写日记，Anthropic 将其内容报告给警方，导致她面临重罪指控。事件引发 AI 平台隐私、内容审查和强制报告边界讨论；开发者需重新审视日志留存、用户告知与合规策略。",
-      "score": 107
+      "summary": "文章指出 AI 编码代理提升代码产量，却未必带来同等软件价值，瓶颈转向需求、评审、测试与维护。开发者应把代理用于原型和重复任务，同时强化架构、审查与质量门禁，避免技术债和虚假生产力。",
+      "score": 53
     },
     {
-      "title": "Germany’s RobCo hits $1B valuation",
-      "url": "https://techfundingnews.com/europes-new-robotics-unicorn-germanys-robco-hits-1b-valuation/",
+      "title": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
+      "url": "https://news.ycombinator.com/item?id=50059096",
       "source": "HN",
-      "summary": "德国机器人公司 RobCo 估值达 10 亿美元，主打模块化工业机器人，降低自动化部署门槛。对开发者而言，机器人 OS、低代码编程、边缘 AI 与工业软件集成机会增加，值得关注 AI 与制造业结合趋势。",
-      "score": 302
+      "summary": "Agent37 提供低成本代理沙箱，让 AI agent 在隔离环境中安全执行代码与工具调用。对构建自动化代理的团队，沙箱是安全、成本和可观测性的关键基础设施，值得关注其隔离机制、计费方式及编排框架集成。",
+      "score": 30
     },
     {
       "title": "openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
       "url": "https://github.com/openclaw/openclaw",
       "source": "GitHub",
-      "summary": "openclaw 是跨平台 AI 代理开源项目，宣称可在任意操作系统和平台执行真实任务。它代表 AI Agent 从聊天走向自动化操作的趋势，开发者可研究其工具调用、权限隔离和插件生态，但需注意安全边界。",
-      "score": 391425
+      "summary": "openclaw 是跨平台 AI 代理项目，强调真正执行任务而非只对话，支持任意操作系统与平台。高星反映开发者对可操作代理的强烈需求。可用于自动化工作流、桌面操作和工具调用，值得研究其架构、扩展与安全模型。",
+      "score": 391776
     },
     {
       "title": "obra/superpowers -- An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
       "source": "GitHub",
-      "summary": "obra/superpowers 提供面向 AI 代理的技能框架与软件开发方法论，帮助把代理能力组织成可复用工作流。对采用 Copilot、Claude Code 等工具的团队，它可能改善任务分解、上下文管理和协作规范。",
-      "score": 295565
+      "summary": "obra/superpowers 是面向代理的技能框架与软件开发方法论，尝试把提示、工具和流程沉淀为可复用能力。它反映 AI 编程从单次提示转向工程化协作，开发者可借鉴其技能组织、评审与自动化实践，提升代理交付稳定性。",
+      "score": 298102
     }
   ]
 }
