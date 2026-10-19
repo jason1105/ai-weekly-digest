@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-10-12T18:19:56.229754Z",
-  "week": "2026 第 41 周",
+  "generated_at": "2026-10-19T15:59:12.020766Z",
+  "week": "2026 第 42 周",
   "year": 2026,
-  "week_number": 41,
+  "week_number": 42,
   "items": [
     {
-      "title": "The gap in shared understanding of LLM capability is widening",
-      "url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "title": "Someone behind the software",
+      "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
       "source": "HN",
-      "summary": "Karpathy 指出业界对大模型能力的共同理解正在分裂：有人看到通用智能，有人只看到昂贵自动补全。开发者应建立自己的任务评测，关注真实成功率、成本与失败模式，避免被演示和炒作误导。",
-      "score": 629
+      "summary": "这篇随笔提醒开发者，软件背后始终有具体的人：维护者的疲惫、动机与社区关系会直接影响开源项目质量。关注人的因素，有助于团队建立更可持续的协作与维护机制。",
+      "score": 519
     },
     {
-      "title": "Fingerprints are the new cookies",
-      "url": "https://royfish.dev/fingerprints-are-the-new-cookies",
+      "title": "Linux 7.3",
+      "url": "https://lwn.net/Articles/1101143/",
       "source": "HN",
-      "summary": "浏览器指纹正取代第三方 Cookie，成为跨站追踪和风控的核心手段。Web 开发者需重新评估分析、广告、登录与反欺诈方案，采用同意管理、隐私沙盒和服务端策略，降低合规与用户信任风险。",
-      "score": 646
+      "summary": "Linux 7.3 发布，作为内核主线更新，通常带来驱动、调度、文件系统和安全修复等变化。开发者应关注 ABI/行为变化与发行版跟进节奏，及时评估升级和兼容性风险。",
+      "score": 482
     },
     {
-      "title": "Total Annihilation, rebuilt for modern computers",
-      "url": "https://nanolathe.gg",
+      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+      "url": "https://arxiv.org/abs/2610.18861",
       "source": "HN",
-      "summary": "经典 RTS《横扫千军》被社区重制并适配现代电脑，保留原玩法，改进兼容性、渲染和多人体验。它展示开源逆向工程如何延续老游戏生命，对跨平台桌面、资源管线与社区维护项目有参考价值。",
-      "score": 636
+      "summary": "该论文提出在潜空间推理、用文本行动的混合智能体架构，试图兼顾推理效率与可执行性。对构建复杂 LLM Agent 的开发者而言，值得关注其任务规划、工具调用与可观测性设计。",
+      "score": 478
     },
     {
-      "title": "GLM-Legal",
-      "url": "https://z.ai/blog/glm-legal",
+      "title": "Timestral: Mistral release time-series foundation models",
+      "url": "https://mistral.ai/news/timestral/",
       "source": "HN",
-      "summary": "智谱发布面向法律领域的 GLM-Legal，可能覆盖法律问答、文书审查和合规检索。垂直模型能降低专业场景幻觉与部署门槛。开发者可关注 API、评测基准和私有化方案，评估合同与法务自动化集成机会。",
-      "score": 204
+      "summary": "Mistral 发布时间序列基础模型 Timestral，面向预测类任务提供通用建模能力。它值得关注，因为可减少从零训练成本；开发者应评估其在金融、运维和业务指标预测中的数据适配与推理成本。",
+      "score": 310
     },
     {
-      "title": "Show HN: PS2 games statically recompiled to WebAssembly",
-      "url": "https://github.com/snuri00/ps2-web-recomp",
+      "title": "If you don't run your own LLM proxy, how do you know whats going on?",
+      "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
       "source": "HN",
-      "summary": "该项目把 PS2 游戏静态重编译为 WebAssembly，使经典主机游戏有望直接在浏览器运行。它结合反编译、重编译与 WASM 沙箱，展示旧平台代码迁移潜力，对模拟器、游戏移植和浏览器高性能计算有启发。",
-      "score": 209
+      "summary": "文章主张团队应自建 LLM 代理层，以统一管理密钥、路由、限流、日志和成本，避免对第三方网关的黑盒依赖。对生产级 AI 应用而言，这是提升可观测性、安全与供应商切换能力的关键基础设施。",
+      "score": 262
     },
     {
-      "title": "Type-safe HTML templating in Zig",
-      "url": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
+      "title": "Wine Ported to OpenBSD",
+      "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
       "source": "HN",
-      "summary": "文章展示如何在 Zig 中实现类型安全 HTML 模板，让编译期捕获标签、属性和转义错误。对追求性能与安全的 Web 后端有吸引力，也为 Zig 生态补齐实用 Web 组件，值得关注其实现思路与库化进展。",
-      "score": 207
+      "summary": "Wine 被移植到 OpenBSD，使该平台具备运行部分 Windows 应用的兼容层能力。对开源系统与跨平台工具开发者来说，值得关注移植中的兼容性、安全边界和后续维护成本。",
+      "score": 178
     },
     {
-      "title": "AI coding agents generate more code, but not more software",
-      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
+      "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
       "source": "HN",
-      "summary": "文章指出 AI 编码代理提升代码产量，却未必带来同等软件价值，瓶颈转向需求、评审、测试与维护。开发者应把代理用于原型和重复任务，同时强化架构、审查与质量门禁，避免技术债和虚假生产力。",
-      "score": 53
+      "summary": "Let's Encrypt 将为域名验证增加两个远程验证视角，以降低单点网络位置导致的误判和滥用风险。依赖 ACME 自动签发证书的开发者应关注验证失败、重试策略及边缘网络配置的变化。",
+      "score": 142
     },
     {
-      "title": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
-      "url": "https://news.ycombinator.com/item?id=50059096",
+      "title": "Show HN: Qwen3-4B with the AI writing tics trained out",
+      "url": "https://100toolkit.com/blog/deslop-model/",
       "source": "HN",
-      "summary": "Agent37 提供低成本代理沙箱，让 AI agent 在隔离环境中安全执行代码与工具调用。对构建自动化代理的团队，沙箱是安全、成本和可观测性的关键基础设施，值得关注其隔离机制、计费方式及编排框架集成。",
-      "score": 30
+      "summary": "该项目展示如何通过训练去除 Qwen3-4B 的“AI 写作腔”，让本地小模型输出更自然。对做内容生成、写作助手和私有化部署的开发者有参考价值，也提示模型风格可通过后训练精细控制。",
+      "score": 98
     },
     {
       "title": "openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
       "url": "https://github.com/openclaw/openclaw",
       "source": "GitHub",
-      "summary": "openclaw 是跨平台 AI 代理项目，强调真正执行任务而非只对话，支持任意操作系统与平台。高星反映开发者对可操作代理的强烈需求。可用于自动化工作流、桌面操作和工具调用，值得研究其架构、扩展与安全模型。",
-      "score": 391776
+      "summary": "openclaw 是主打跨系统执行真实任务的 AI 代理项目，强调在任意 OS 与平台上操作软件。其高关注度反映 Agent 从对话走向自动化执行；开发者可研究其工具调用、权限隔离和任务可靠性。",
+      "score": 392455
     },
     {
-      "title": "obra/superpowers -- An agentic skills framework & software development methodology that works.",
-      "url": "https://github.com/obra/superpowers",
+      "title": "morluto/rea -- Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
       "source": "GitHub",
-      "summary": "obra/superpowers 是面向代理的技能框架与软件开发方法论，尝试把提示、工具和流程沉淀为可复用能力。它反映 AI 编程从单次提示转向工程化协作，开发者可借鉴其技能组织、评审与自动化实践，提升代理交付稳定性。",
-      "score": 298102
+      "summary": "rea 面向用智能体逆向分析应用行为与原生二进制，把复杂逆向流程自动化。对安全研究、兼容性分析和软件供应链审计有实际价值，但需重视授权边界、误报和沙箱隔离。",
+      "score": 333192
     }
   ]
 }
