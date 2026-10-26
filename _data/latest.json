@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-10-19T15:59:12.020766Z",
-  "week": "2026 第 42 周",
+  "generated_at": "2026-10-26T15:35:54.919924Z",
+  "week": "2026 第 43 周",
   "year": 2026,
-  "week_number": 42,
+  "week_number": 43,
   "items": [
     {
-      "title": "Someone behind the software",
-      "url": "https://karrisaarinen.com/posts/someone-behind-the-software/",
+      "title": "Anthropic S-1",
+      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
       "source": "HN",
-      "summary": "这篇随笔提醒开发者，软件背后始终有具体的人：维护者的疲惫、动机与社区关系会直接影响开源项目质量。关注人的因素，有助于团队建立更可持续的协作与维护机制。",
-      "score": 519
+      "summary": "Anthropic 提交 S-1 文件，意味着其上市进程进入公开披露阶段。文件中的财务、风险与治理信息，能帮助开发者观察头部 AI 公司的商业化路径、算力成本与合规压力。",
+      "score": 686
     },
     {
-      "title": "Linux 7.3",
-      "url": "https://lwn.net/Articles/1101143/",
+      "title": "Fixing Tool-Call Accuracy in vLLM",
+      "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
       "source": "HN",
-      "summary": "Linux 7.3 发布，作为内核主线更新，通常带来驱动、调度、文件系统和安全修复等变化。开发者应关注 ABI/行为变化与发行版跟进节奏，及时评估升级和兼容性风险。",
-      "score": 482
+      "summary": "该文聚焦 vLLM 工具调用准确率问题，分析函数调用解析失败的原因并给出修复思路。对构建 Agent、函数调用应用的开发者而言，可减少参数解析错误，提升推理服务稳定性与可观测性。",
+      "score": 81
     },
     {
-      "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-      "url": "https://arxiv.org/abs/2610.18861",
+      "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
+      "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
       "source": "HN",
-      "summary": "该论文提出在潜空间推理、用文本行动的混合智能体架构，试图兼顾推理效率与可执行性。对构建复杂 LLM Agent 的开发者而言，值得关注其任务规划、工具调用与可观测性设计。",
-      "score": 478
+      "summary": "PaperPilot 是纯 Rust、零云依赖的 PDF 引擎，支持 WASM 与 MCP。开发者可在浏览器或本地完成 PDF 处理，并接入 AI 工具链，适合隐私敏感文档场景，也值得关注 MCP 生态的工程实践。",
+      "score": 201
     },
     {
-      "title": "Timestral: Mistral release time-series foundation models",
-      "url": "https://mistral.ai/news/timestral/",
+      "title": "Pharo 14",
+      "url": "https://pharo.org/news/2026-10-26-Pharo14Release.html",
       "source": "HN",
-      "summary": "Mistral 发布时间序列基础模型 Timestral，面向预测类任务提供通用建模能力。它值得关注，因为可减少从零训练成本；开发者应评估其在金融、运维和业务指标预测中的数据适配与推理成本。",
-      "score": 310
+      "summary": "Pharo 14 发布，延续 Smalltalk 式实时编程体验；作为开源动态语言环境，适合研究、教学和快速原型开发，对探索非主流编程范式与工具链的开发者有参考价值。",
+      "score": 61
     },
     {
-      "title": "If you don't run your own LLM proxy, how do you know whats going on?",
-      "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+      "title": "Websites Should Be Printable",
+      "url": "https://brennenputh.me/blog/printable-websites/",
       "source": "HN",
-      "summary": "文章主张团队应自建 LLM 代理层，以统一管理密钥、路由、限流、日志和成本，避免对第三方网关的黑盒依赖。对生产级 AI 应用而言，这是提升可观测性、安全与供应商切换能力的关键基础设施。",
-      "score": 262
+      "summary": "文章主张网站应保持可打印性，讨论打印样式、排版与信息结构。对前端开发者而言，不能只优化屏幕体验，还需用语义化 HTML 和 CSS print 保证文档可输出、可归档。",
+      "score": 153
     },
     {
-      "title": "Wine Ported to OpenBSD",
-      "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
-      "source": "HN",
-      "summary": "Wine 被移植到 OpenBSD，使该平台具备运行部分 Windows 应用的兼容层能力。对开源系统与跨平台工具开发者来说，值得关注移植中的兼容性、安全边界和后续维护成本。",
-      "score": 178
+      "title": "[Markdown] codecrafters-io/build-your-own-x -- Master programming by recreating your favorite technologies from scratch.",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "source": "GitHub",
+      "summary": "该项目汇集从零复刻数据库、编译器、操作系统等技术的教程，帮助开发者通过动手实践理解底层原理。它不是速成工具，却是长期高价值的开源学习路线，适合系统性进阶。",
+      "score": 556374
     },
     {
-      "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
-      "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
-      "source": "HN",
-      "summary": "Let's Encrypt 将为域名验证增加两个远程验证视角，以降低单点网络位置导致的误判和滥用风险。依赖 ACME 自动签发证书的开发者应关注验证失败、重试策略及边缘网络配置的变化。",
-      "score": 142
-    },
-    {
-      "title": "Show HN: Qwen3-4B with the AI writing tics trained out",
-      "url": "https://100toolkit.com/blog/deslop-model/",
-      "source": "HN",
-      "summary": "该项目展示如何通过训练去除 Qwen3-4B 的“AI 写作腔”，让本地小模型输出更自然。对做内容生成、写作助手和私有化部署的开发者有参考价值，也提示模型风格可通过后训练精细控制。",
-      "score": 98
-    },
-    {
-      "title": "openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "title": "[TypeScript] openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
       "url": "https://github.com/openclaw/openclaw",
       "source": "GitHub",
-      "summary": "openclaw 是主打跨系统执行真实任务的 AI 代理项目，强调在任意 OS 与平台上操作软件。其高关注度反映 Agent 从对话走向自动化执行；开发者可研究其工具调用、权限隔离和任务可靠性。",
-      "score": 392455
+      "summary": "openclaw 宣称可在任意操作系统和平台执行任务的 AI 工具，强调从对话走向实际操作。若其能力与安全边界成熟，将降低自动化 Agent 的落地门槛，值得开发者关注集成方式与权限控制。",
+      "score": 393128
     },
     {
-      "title": "morluto/rea -- Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "title": "[TypeScript] morluto/rea -- Reverse engineer anything with agents, from app behavior down to native binaries.",
       "url": "https://github.com/morluto/rea",
       "source": "GitHub",
-      "summary": "rea 面向用智能体逆向分析应用行为与原生二进制，把复杂逆向流程自动化。对安全研究、兼容性分析和软件供应链审计有实际价值，但需重视授权边界、误报和沙箱隔离。",
-      "score": 333192
+      "summary": "rea 用 Agent 逆向工程应用行为乃至原生二进制，面向安全研究、兼容性分析与调试场景。它体现 AI 辅助逆向的自动化趋势，但开发者也需关注授权、合规与沙箱隔离问题。",
+      "score": 389582
+    },
+    {
+      "title": "[Shell] obra/superpowers -- An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "source": "GitHub",
+      "summary": "obra/superpowers 是面向 Agent 的技能框架与软件开发方法论，强调把可复用技能组织进工作流。对使用 Claude Code 等工具的团队，可参考其规范设计，提升 Agent 协作的稳定性。",
+      "score": 305444
+    },
+    {
+      "title": "[JavaScript] affaan-m/ECC -- The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/ECC",
+      "source": "GitHub",
+      "summary": "ECC 是针对 Claude Code、Codex、Cursor 等 Agent 框架的优化系统，覆盖技能、记忆、安全与研究优先开发。适合构建复杂 AI 编码工作流的开发者参考，尤其关注上下文与权限管理。",
+      "score": 289426
     }
   ]
 }
