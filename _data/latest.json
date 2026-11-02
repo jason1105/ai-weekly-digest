@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-10-26T15:35:54.919924Z",
-  "week": "2026 第 43 周",
+  "generated_at": "2026-11-02T18:57:10.812264Z",
+  "week": "2026 第 44 周",
   "year": 2026,
-  "week_number": 43,
+  "week_number": 44,
   "items": [
     {
-      "title": "Anthropic S-1",
-      "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+      "title": "WTF Ubuntu?",
+      "url": "https://chalmovsky.com/posts/wtf-ubuntu",
       "source": "HN",
-      "summary": "Anthropic 提交 S-1 文件，意味着其上市进程进入公开披露阶段。文件中的财务、风险与治理信息，能帮助开发者观察头部 AI 公司的商业化路径、算力成本与合规压力。",
-      "score": 686
+      "summary": "高热度讨论聚焦Ubuntu近期引发争议的决策与体验问题，反映开发者对主流Linux发行版稳定性、透明度和取向的担忧。对依赖Ubuntu的团队，这是评估升级风险、迁移成本与供应链多样性的信号。",
+      "score": 872
     },
     {
-      "title": "Fixing Tool-Call Accuracy in vLLM",
-      "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+      "title": "Postgres 19 is late because so many more bugs are being found now",
+      "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
       "source": "HN",
-      "summary": "该文聚焦 vLLM 工具调用准确率问题，分析函数调用解析失败的原因并给出修复思路。对构建 Agent、函数调用应用的开发者而言，可减少参数解析错误，提升推理服务稳定性与可观测性。",
-      "score": 81
+      "summary": "Postgres 19延期，作者认为AI辅助让更多缺陷在发布前被发现。核心价值是数据库发布质量与AI代码审查的真实影响；开发者应关注升级节奏、回归测试和缺陷分类，而非只盯发布日期。",
+      "score": 787
     },
     {
-      "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
-      "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
+      "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+      "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
       "source": "HN",
-      "summary": "PaperPilot 是纯 Rust、零云依赖的 PDF 引擎，支持 WASM 与 MCP。开发者可在浏览器或本地完成 PDF 处理，并接入 AI 工具链，适合隐私敏感文档场景，也值得关注 MCP 生态的工程实践。",
-      "score": 201
+      "summary": "Anthropic内部按零售价计算的AI使用成本已超过员工薪酬，显示重度Agent与LLM工作流的真实开销。对开发者而言，token预算、缓存、模型路由和用量治理将从优化项变成工程基础设施。",
+      "score": 146
     },
     {
-      "title": "Pharo 14",
-      "url": "https://pharo.org/news/2026-10-26-Pharo14Release.html",
+      "title": "Moving our warehouse off DuckDB",
+      "url": "https://posthog.com/blog/moving-off-duckdb",
       "source": "HN",
-      "summary": "Pharo 14 发布，延续 Smalltalk 式实时编程体验；作为开源动态语言环境，适合研究、教学和快速原型开发，对探索非主流编程范式与工具链的开发者有参考价值。",
-      "score": 61
+      "summary": "PostHog分享从DuckDB迁出数据仓库的决策与教训，涉及扩展性、并发和运维边界。对选用嵌入式或单机分析引擎的团队有参考价值，提醒按实际工作负载而非基准测试做架构选择。",
+      "score": 109
     },
     {
-      "title": "Websites Should Be Printable",
-      "url": "https://brennenputh.me/blog/printable-websites/",
+      "title": "We halved DNS build delay and cut memory use by 85%",
+      "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
       "source": "HN",
-      "summary": "文章主张网站应保持可打印性，讨论打印样式、排版与信息结构。对前端开发者而言，不能只优化屏幕体验，还需用语义化 HTML 和 CSS print 保证文档可输出、可归档。",
-      "score": 153
+      "summary": "Cloudflare通过定向zone构建将DNS构建延迟减半、内存占用降低85%。核心是增量/分区构建与资源隔离；对运行大规模配置分发、DNS或边缘服务的开发者有直接的架构借鉴意义。",
+      "score": 74
     },
     {
-      "title": "[Markdown] codecrafters-io/build-your-own-x -- Master programming by recreating your favorite technologies from scratch.",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "source": "GitHub",
-      "summary": "该项目汇集从零复刻数据库、编译器、操作系统等技术的教程，帮助开发者通过动手实践理解底层原理。它不是速成工具，却是长期高价值的开源学习路线，适合系统性进阶。",
-      "score": 556374
+      "title": "LongCat-2.5: Native Multimodality for Agentic Tasks",
+      "url": "https://longcat.ai/blog/longcat-2.5/",
+      "source": "HN",
+      "summary": "LongCat-2.5主打面向Agent任务的原生多模态，强调感知与行动一体化。值得关注它能否降低多模态Agent的工程复杂度；开发者可评估其在工具调用、视觉理解和任务编排上的实际表现。",
+      "score": 51
     },
     {
-      "title": "[TypeScript] openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
-      "url": "https://github.com/openclaw/openclaw",
-      "source": "GitHub",
-      "summary": "openclaw 宣称可在任意操作系统和平台执行任务的 AI 工具，强调从对话走向实际操作。若其能力与安全边界成熟，将降低自动化 Agent 的落地门槛，值得开发者关注集成方式与权限控制。",
-      "score": 393128
+      "title": "Show HN: Subvocal – Talk to your computer without making noise",
+      "url": "https://subvocal.company/",
+      "source": "HN",
+      "summary": "Subvocal探索不发声即可与电脑对话的输入方式，结合无声语音识别与交互设计。值得关注其隐私优势和在公共办公场景的可用性；对构建无障碍、免手操作或新一代输入工具的开发者有启发。",
+      "score": 209
+    },
+    {
+      "title": "Agentic Backdoors via Pretraining Poisoning",
+      "url": "https://arxiv.org/abs/2610.37741",
+      "source": "HN",
+      "summary": "研究展示通过预训练数据投毒植入Agent后门，使模型在特定触发下执行恶意行为。虽热度不高，但对使用第三方模型与数据构建Agent的团队是关键安全提醒，需加强数据溯源、触发检测和行为审计。",
+      "score": 13
     },
     {
       "title": "[TypeScript] morluto/rea -- Reverse engineer anything with agents, from app behavior down to native binaries.",
       "url": "https://github.com/morluto/rea",
       "source": "GitHub",
-      "summary": "rea 用 Agent 逆向工程应用行为乃至原生二进制，面向安全研究、兼容性分析与调试场景。它体现 AI 辅助逆向的自动化趋势，但开发者也需关注授权、合规与沙箱隔离问题。",
-      "score": 389582
+      "summary": "rea用Agent把应用行为一路逆向到原生二进制，定位自动化逆向工程。高星反映AI辅助安全分析的需求；可提升漏洞研究、兼容性分析效率，但团队也需注意滥用边界、合规与结果可信度。",
+      "score": 422201
     },
     {
-      "title": "[Shell] obra/superpowers -- An agentic skills framework & software development methodology that works.",
-      "url": "https://github.com/obra/superpowers",
+      "title": "[TypeScript] openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "url": "https://github.com/openclaw/openclaw",
       "source": "GitHub",
-      "summary": "obra/superpowers 是面向 Agent 的技能框架与软件开发方法论，强调把可复用技能组织进工作流。对使用 Claude Code 等工具的团队，可参考其规范设计，提升 Agent 协作的稳定性。",
-      "score": 305444
-    },
-    {
-      "title": "[JavaScript] affaan-m/ECC -- The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "url": "https://github.com/affaan-m/ECC",
-      "source": "GitHub",
-      "summary": "ECC 是针对 Claude Code、Codex、Cursor 等 Agent 框架的优化系统，覆盖技能、记忆、安全与研究优先开发。适合构建复杂 AI 编码工作流的开发者参考，尤其关注上下文与权限管理。",
-      "score": 289426
+      "summary": "OpenClaw主打跨操作系统和平台真正执行任务的AI，强调通用Agent落地。值得关注其权限模型、工具调用可靠性与跨平台集成；对构建桌面自动化、个人助理和端侧Agent的开发者有直接参考价值。",
+      "score": 393739
     }
   ]
 }
