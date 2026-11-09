@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-11-02T18:57:10.812264Z",
-  "week": "2026 第 44 周",
+  "generated_at": "2026-11-09T19:18:07.978952Z",
+  "week": "2026 第 45 周",
   "year": 2026,
-  "week_number": 44,
+  "week_number": 45,
   "items": [
     {
-      "title": "WTF Ubuntu?",
-      "url": "https://chalmovsky.com/posts/wtf-ubuntu",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
       "source": "HN",
-      "summary": "高热度讨论聚焦Ubuntu近期引发争议的决策与体验问题，反映开发者对主流Linux发行版稳定性、透明度和取向的担忧。对依赖Ubuntu的团队，这是评估升级风险、迁移成本与供应链多样性的信号。",
-      "score": 872
+      "summary": "Anthropic 发布新版 Claude 模型，强调推理与创作能力升级。对开发者而言，API、工具调用和长上下文表现可能直接影响编码助手、Agent 与内容生成应用，值得尽快评测迁移成本与收益。",
+      "score": 134
     },
     {
-      "title": "Postgres 19 is late because so many more bugs are being found now",
-      "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
+      "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
+      "url": "https://twitter.com/shanemelaugh/status/2119192075505893695",
       "source": "HN",
-      "summary": "Postgres 19延期，作者认为AI辅助让更多缺陷在发布前被发现。核心价值是数据库发布质量与AI代码审查的真实影响；开发者应关注升级节奏、回归测试和缺陷分类，而非只盯发布日期。",
-      "score": 787
+      "summary": "社区讨论 Opus 5.5 在 11 月 3 日后推理模式疑似变化，输出质量和稳定性可能下降。对依赖闭源模型的团队，这提醒要建立回归测试与版本锁定，避免模型静默更新影响线上产品。",
+      "score": 477
     },
     {
-      "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
-      "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+      "title": "Our Smallest, Most Efficient Model: Muse Ember",
+      "url": "https://research.meta.ai/blog/muse-ember",
       "source": "HN",
-      "summary": "Anthropic内部按零售价计算的AI使用成本已超过员工薪酬，显示重度Agent与LLM工作流的真实开销。对开发者而言，token预算、缓存、模型路由和用量治理将从优化项变成工程基础设施。",
-      "score": 146
+      "summary": "Meta 推出更小、更高效的 Muse Ember 模型，主打低资源推理。它值得关注，因为小模型可降低本地部署和边缘 AI 成本，为开发者在延迟、隐私和算力受限场景提供新选择。",
+      "score": 62
     },
     {
-      "title": "Moving our warehouse off DuckDB",
-      "url": "https://posthog.com/blog/moving-off-duckdb",
+      "title": "Zebkit – Chromium as an embeddable library",
+      "url": "https://github.com/ikey4u/zebkit",
       "source": "HN",
-      "summary": "PostHog分享从DuckDB迁出数据仓库的决策与教训，涉及扩展性、并发和运维边界。对选用嵌入式或单机分析引擎的团队有参考价值，提醒按实际工作负载而非基准测试做架构选择。",
-      "score": 109
+      "summary": "Zebkit 把 Chromium 封装为可嵌入库，方便在桌面应用中集成现代 Web 渲染能力。对需要内嵌浏览器、混搭 Web 与原生 UI 的开发者，它可能简化打包与升级流程，减少自研浏览器壳成本。",
+      "score": 90
     },
     {
-      "title": "We halved DNS build delay and cut memory use by 85%",
-      "url": "https://blog.cloudflare.com/dns-targeted-zone-builds/",
+      "title": "Show HN: DBDelve – Open-Source DB Client Made with Rust and GPUI",
+      "url": "https://news.ycombinator.com/item?id=50427934",
       "source": "HN",
-      "summary": "Cloudflare通过定向zone构建将DNS构建延迟减半、内存占用降低85%。核心是增量/分区构建与资源隔离；对运行大规模配置分发、DNS或边缘服务的开发者有直接的架构借鉴意义。",
-      "score": 74
-    },
-    {
-      "title": "LongCat-2.5: Native Multimodality for Agentic Tasks",
-      "url": "https://longcat.ai/blog/longcat-2.5/",
-      "source": "HN",
-      "summary": "LongCat-2.5主打面向Agent任务的原生多模态，强调感知与行动一体化。值得关注它能否降低多模态Agent的工程复杂度；开发者可评估其在工具调用、视觉理解和任务编排上的实际表现。",
+      "summary": "DBDelve 是用 Rust 与 GPUI 构建的开源数据库客户端，强调性能和原生体验。对厌倦重型 Electron 工具的开发者，它提供了轻量、可审计的替代方案，也展示 Rust 桌面 UI 的可行性。",
       "score": 51
     },
     {
-      "title": "Show HN: Subvocal – Talk to your computer without making noise",
-      "url": "https://subvocal.company/",
+      "title": "What is malloc doing, anyway?",
+      "url": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
       "source": "HN",
-      "summary": "Subvocal探索不发声即可与电脑对话的输入方式，结合无声语音识别与交互设计。值得关注其隐私优势和在公共办公场景的可用性；对构建无障碍、免手操作或新一代输入工具的开发者有启发。",
-      "score": 209
+      "summary": "文章深入解释 malloc 的分配策略、元数据与系统调用路径，帮助理解内存管理真实开销。对排查内存泄漏、性能抖动或编写高性能 C/C++/Rust FFI 的开发者，是补底层基本功的优质材料。",
+      "score": 168
     },
     {
-      "title": "Agentic Backdoors via Pretraining Poisoning",
-      "url": "https://arxiv.org/abs/2610.37741",
-      "source": "HN",
-      "summary": "研究展示通过预训练数据投毒植入Agent后门，使模型在特定触发下执行恶意行为。虽热度不高，但对使用第三方模型与数据构建Agent的团队是关键安全提醒，需加强数据溯源、触发检测和行为审计。",
-      "score": 13
+      "title": "codecrafters-io/build-your-own-x -- Master programming by recreating your favorite technologies from scratch.",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "source": "GitHub",
+      "summary": "这个超人气开源仓库汇集“从零复刻你喜爱的技术”教程，覆盖数据库、编译器、Git、操作系统等。它适合开发者通过动手项目理解系统原理，也是团队培训和学习路线的高价值资源。",
+      "score": 561315
     },
     {
-      "title": "[TypeScript] morluto/rea -- Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "title": "morluto/rea -- Reverse engineer anything with agents, from app behavior down to native binaries.",
       "url": "https://github.com/morluto/rea",
       "source": "GitHub",
-      "summary": "rea用Agent把应用行为一路逆向到原生二进制，定位自动化逆向工程。高星反映AI辅助安全分析的需求；可提升漏洞研究、兼容性分析效率，但团队也需注意滥用边界、合规与结果可信度。",
-      "score": 422201
+      "summary": "rea 主打用 Agent 逆向分析应用行为直至原生二进制，把 AI 自动化引入安全研究与软件分析。对需要理解闭源协议、排查恶意样本或做兼容性研究的开发者，它代表了 Agent 工具链的新方向。",
+      "score": 446413
     },
     {
-      "title": "[TypeScript] openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
+      "title": "openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
       "url": "https://github.com/openclaw/openclaw",
       "source": "GitHub",
-      "summary": "OpenClaw主打跨操作系统和平台真正执行任务的AI，强调通用Agent落地。值得关注其权限模型、工具调用可靠性与跨平台集成；对构建桌面自动化、个人助理和端侧Agent的开发者有直接参考价值。",
-      "score": 393739
+      "summary": "openclaw 定位为跨操作系统、跨平台执行真实任务的 AI Agent，强调可落地操作而非只聊天。对开发者，它可用于自动化运维、桌面操作与流程集成，也值得观察其权限控制和可靠性设计。",
+      "score": 394245
+    },
+    {
+      "title": "affaan-m/ECC -- The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/ECC",
+      "source": "GitHub",
+      "summary": "ECC 是面向 Claude Code、Codex、Cursor 等 Agent 的性能优化系统，整合技能、记忆、安全与研究流程。它反映编码 Agent 正从提示词走向工程化，对构建稳定、可复用的 AI 开发工作流有参考价值。",
+      "score": 300125
     }
   ]
 }
