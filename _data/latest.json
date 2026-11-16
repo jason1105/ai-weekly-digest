@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-11-09T19:18:07.978952Z",
-  "week": "2026 第 45 周",
+  "generated_at": "2026-11-16T19:00:52.965375Z",
+  "week": "2026 第 46 周",
   "year": 2026,
-  "week_number": 45,
+  "week_number": 46,
   "items": [
     {
-      "title": "Claude Fable 5.2 and Mythos 5.2",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "title": "Qwen4-Max",
+      "url": "https://qwen.ai/blog?id=qwen4-max",
       "source": "HN",
-      "summary": "Anthropic 发布新版 Claude 模型，强调推理与创作能力升级。对开发者而言，API、工具调用和长上下文表现可能直接影响编码助手、Agent 与内容生成应用，值得尽快评测迁移成本与收益。",
-      "score": 134
+      "summary": "Qwen4-Max 发布，代表国产大模型在能力与生态上的又一次跃迁。值得关注其基准表现、API 兼容性和开源策略；开发者可评估推理成本、多模态与 Agent 场景替换现有模型。",
+      "score": 814
     },
     {
-      "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
-      "url": "https://twitter.com/shanemelaugh/status/2119192075505893695",
+      "title": "Universal XSS in uBlock Origin from website-driven element picker",
+      "url": "https://iter.ca/post/ubo-uxss/",
       "source": "HN",
-      "summary": "社区讨论 Opus 5.5 在 11 月 3 日后推理模式疑似变化，输出质量和稳定性可能下降。对依赖闭源模型的团队，这提醒要建立回归测试与版本锁定，避免模型静默更新影响线上产品。",
-      "score": 477
+      "summary": "uBlock Origin 被披露网站可驱动元素选择器触发通用 XSS，波及大量浏览器用户。安全团队应尽快升级并审计扩展权限；前端与扩展开发者需重新审视内容脚本和跨域消息边界。",
+      "score": 571
     },
     {
-      "title": "Our Smallest, Most Efficient Model: Muse Ember",
-      "url": "https://research.meta.ai/blog/muse-ember",
+      "title": "Jiff 1.0: A datetime library for Rust",
+      "url": "https://burntsushi.net/jiff/",
       "source": "HN",
-      "summary": "Meta 推出更小、更高效的 Muse Ember 模型，主打低资源推理。它值得关注，因为小模型可降低本地部署和边缘 AI 成本，为开发者在延迟、隐私和算力受限场景提供新选择。",
-      "score": 62
+      "summary": "BurntSushi 发布的 Jiff 1.0 提供更安全、符合时区语义的 Rust 日期时间库。它值得 Rust 开发者关注，可替代 chrono 的部分场景，降低 DST、时区和序列化错误。",
+      "score": 128
     },
     {
-      "title": "Zebkit – Chromium as an embeddable library",
-      "url": "https://github.com/ikey4u/zebkit",
+      "title": "Interpreting claims that a theorem is correct because it was checked in Lean",
+      "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
       "source": "HN",
-      "summary": "Zebkit 把 Chromium 封装为可嵌入库，方便在桌面应用中集成现代 Web 渲染能力。对需要内嵌浏览器、混搭 Web 与原生 UI 的开发者，它可能简化打包与升级流程，减少自研浏览器壳成本。",
-      "score": 90
+      "summary": "文章讨论“在 Lean 中检查通过”是否等于定理正确，揭示形式化验证的信任边界。对使用 Lean 的 AI 数学与验证工具开发者而言，需理解公理、编译器与规范本身的风险。",
+      "score": 235
     },
     {
-      "title": "Show HN: DBDelve – Open-Source DB Client Made with Rust and GPUI",
-      "url": "https://news.ycombinator.com/item?id=50427934",
+      "title": "Aristotle Expands into Rust",
+      "url": "https://www.harmonic.fun/news/aristotle-rust-verification/",
       "source": "HN",
-      "summary": "DBDelve 是用 Rust 与 GPUI 构建的开源数据库客户端，强调性能和原生体验。对厌倦重型 Electron 工具的开发者，它提供了轻量、可审计的替代方案，也展示 Rust 桌面 UI 的可行性。",
-      "score": 51
+      "summary": "Aristotle 将形式化验证能力扩展到 Rust，尝试在系统编程语言中提供更强的正确性保证。值得关注其工具链成熟度与学习成本，可能影响安全关键 Rust 项目的验证流程。",
+      "score": 30
     },
     {
-      "title": "What is malloc doing, anyway?",
-      "url": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
+      "title": "The Active Directory Era Is Finally Over",
+      "url": "https://infisical.com/blog/active-directory-machine-identity",
       "source": "HN",
-      "summary": "文章深入解释 malloc 的分配策略、元数据与系统调用路径，帮助理解内存管理真实开销。对排查内存泄漏、性能抖动或编写高性能 C/C++/Rust FFI 的开发者，是补底层基本功的优质材料。",
-      "score": 168
+      "summary": "Infisical 文章认为传统 Active Directory 机器身份模式正在被云原生工作负载身份取代。开发者应关注短期凭证、SPIFFE/工作负载身份与密钥管理，减少长期域凭据带来的攻击面。",
+      "score": 71
+    },
+    {
+      "title": "OOS – an open operating system for the Rigol Scopes",
+      "url": "https://www.eevblog.com/forum/testgear/oos-an-open-operating-system-for-the-rigol-scopes/",
+      "source": "HN",
+      "summary": "OOS 为 Rigol 示波器提供开源操作系统，释放测试仪器的可编程与可扩展能力。嵌入式与硬件开发者可借此研究驱动、UI 和自动化测量，推动廉价仪器进入可改造生态。",
+      "score": 103
     },
     {
       "title": "codecrafters-io/build-your-own-x -- Master programming by recreating your favorite technologies from scratch.",
       "url": "https://github.com/codecrafters-io/build-your-own-x",
       "source": "GitHub",
-      "summary": "这个超人气开源仓库汇集“从零复刻你喜爱的技术”教程，覆盖数据库、编译器、Git、操作系统等。它适合开发者通过动手项目理解系统原理，也是团队培训和学习路线的高价值资源。",
-      "score": 561315
-    },
-    {
-      "title": "morluto/rea -- Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "url": "https://github.com/morluto/rea",
-      "source": "GitHub",
-      "summary": "rea 主打用 Agent 逆向分析应用行为直至原生二进制，把 AI 自动化引入安全研究与软件分析。对需要理解闭源协议、排查恶意样本或做兼容性研究的开发者，它代表了 Agent 工具链的新方向。",
-      "score": 446413
+      "summary": "该仓库汇总从零实现数据库、编译器、操作系统等技术的教程，是理解底层原理的高质量路线图。开发者可按需选择项目实战，弥补只会调用框架的短板，也适合作为团队学习材料。",
+      "score": 563122
     },
     {
       "title": "openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
       "url": "https://github.com/openclaw/openclaw",
       "source": "GitHub",
-      "summary": "openclaw 定位为跨操作系统、跨平台执行真实任务的 AI Agent，强调可落地操作而非只聊天。对开发者，它可用于自动化运维、桌面操作与流程集成，也值得观察其权限控制和可靠性设计。",
-      "score": 394245
+      "summary": "OpenClaw 主打跨操作系统、跨平台的通用 AI Agent，强调真正执行任务而非仅对话。值得关注其工具调用、权限隔离与可扩展性；开发者可评估将其用于自动化工作流和本地代理。",
+      "score": 394589
     },
     {
-      "title": "affaan-m/ECC -- The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "url": "https://github.com/affaan-m/ECC",
+      "title": "morluto/rea -- Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
       "source": "GitHub",
-      "summary": "ECC 是面向 Claude Code、Codex、Cursor 等 Agent 的性能优化系统，整合技能、记忆、安全与研究流程。它反映编码 Agent 正从提示词走向工程化，对构建稳定、可复用的 AI 开发工作流有参考价值。",
-      "score": 300125
+      "summary": "rea 用 Agent 从应用行为逆向到原生二进制，覆盖安全分析与兼容性研究。开发者应关注其自动化逆向能力与合规边界，可用于漏洞研究、协议分析和遗留系统迁移。",
+      "score": 463736
     }
   ]
 }
