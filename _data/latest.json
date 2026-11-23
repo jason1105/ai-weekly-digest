@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-11-16T19:00:52.965375Z",
-  "week": "2026 第 46 周",
+  "generated_at": "2026-11-23T20:41:09.866271Z",
+  "week": "2026 第 47 周",
   "year": 2026,
-  "week_number": 46,
+  "week_number": 47,
   "items": [
     {
-      "title": "Qwen4-Max",
-      "url": "https://qwen.ai/blog?id=qwen4-max",
+      "title": "Nvidia Reinstates Jensen Huang as CEO",
+      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
       "source": "HN",
-      "summary": "Qwen4-Max 发布，代表国产大模型在能力与生态上的又一次跃迁。值得关注其基准表现、API 兼容性和开源策略；开发者可评估推理成本、多模态与 Agent 场景替换现有模型。",
-      "score": 814
+      "summary": "英伟达重新任命黄仁勋为CEO，反映AI算力竞争进入关键阶段。高管变动可能影响GPU路线、CUDA生态与供应链策略；开发者需关注后续产品节奏、定价及AI基础设施投资方向。",
+      "score": 1500
     },
     {
-      "title": "Universal XSS in uBlock Origin from website-driven element picker",
-      "url": "https://iter.ca/post/ubo-uxss/",
+      "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+      "url": "https://z.ai/blog/glm-5.4",
       "source": "HN",
-      "summary": "uBlock Origin 被披露网站可驱动元素选择器触发通用 XSS，波及大量浏览器用户。安全团队应尽快升级并审计扩展权限；前端与扩展开发者需重新审视内容脚本和跨域消息边界。",
-      "score": 571
+      "summary": "GLM-5.4提出首个loop transformer，目标提升通用编码能力。若效果稳定，将增强代码生成、修复与多步推理表现；开发者可关注其API、开源权重与基准成绩，评估替代现有编码助手。",
+      "score": 932
     },
     {
-      "title": "Jiff 1.0: A datetime library for Rust",
-      "url": "https://burntsushi.net/jiff/",
+      "title": "Ladybird is now in alpha",
+      "url": "https://ladybird.org/posts/alpha/",
       "source": "HN",
-      "summary": "BurntSushi 发布的 Jiff 1.0 提供更安全、符合时区语义的 Rust 日期时间库。它值得 Rust 开发者关注，可替代 chrono 的部分场景，降低 DST、时区和序列化错误。",
-      "score": 128
+      "summary": "Ladybird浏览器引擎进入alpha阶段，走独立内核路线。它为非Chromium/Gecko生态提供新选择，有助于推动Web标准竞争；开发者可开始测试兼容性并反馈问题，但暂不宜用于生产环境。",
+      "score": 913
     },
     {
-      "title": "Interpreting claims that a theorem is correct because it was checked in Lean",
-      "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
+      "title": "XNU Linux: Full OS X GUI Userspace on Linux",
+      "url": "https://github.com/AFK-surf/xnulinux",
       "source": "HN",
-      "summary": "文章讨论“在 Lean 中检查通过”是否等于定理正确，揭示形式化验证的信任边界。对使用 Lean 的 AI 数学与验证工具开发者而言，需理解公理、编译器与规范本身的风险。",
-      "score": 235
+      "summary": "XNU Linux尝试在Linux上运行完整macOS图形用户空间，探索跨内核兼容层。对开发者的价值在于研究Darwin/XNU接口与桌面移植；早期项目风险较高，但可能催生新的兼容与虚拟化方案。",
+      "score": 567
     },
     {
-      "title": "Aristotle Expands into Rust",
-      "url": "https://www.harmonic.fun/news/aristotle-rust-verification/",
+      "title": "Apple removed my open-source app from EU App Stores after 9 years",
+      "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
       "source": "HN",
-      "summary": "Aristotle 将形式化验证能力扩展到 Rust，尝试在系统编程语言中提供更强的正确性保证。值得关注其工具链成熟度与学习成本，可能影响安全关键 Rust 项目的验证流程。",
-      "score": 30
+      "summary": "开源应用在经营九年后被苹果从欧盟App Store下架，凸显平台合规与分发权风险。开发者应重视欧盟DMA规则、签名与备援分发渠道，避免单一商店政策变化导致用户和收入中断。",
+      "score": 261
     },
     {
-      "title": "The Active Directory Era Is Finally Over",
-      "url": "https://infisical.com/blog/active-directory-machine-identity",
+      "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
       "source": "HN",
-      "summary": "Infisical 文章认为传统 Active Directory 机器身份模式正在被云原生工作负载身份取代。开发者应关注短期凭证、SPIFFE/工作负载身份与密钥管理，减少长期域凭据带来的攻击面。",
-      "score": 71
-    },
-    {
-      "title": "OOS – an open operating system for the Rigol Scopes",
-      "url": "https://www.eevblog.com/forum/testgear/oos-an-open-operating-system-for-the-rigol-scopes/",
-      "source": "HN",
-      "summary": "OOS 为 Rigol 示波器提供开源操作系统，释放测试仪器的可编程与可扩展能力。嵌入式与硬件开发者可借此研究驱动、UI 和自动化测量，推动廉价仪器进入可改造生态。",
-      "score": 103
-    },
-    {
-      "title": "codecrafters-io/build-your-own-x -- Master programming by recreating your favorite technologies from scratch.",
-      "url": "https://github.com/codecrafters-io/build-your-own-x",
-      "source": "GitHub",
-      "summary": "该仓库汇总从零实现数据库、编译器、操作系统等技术的教程，是理解底层原理的高质量路线图。开发者可按需选择项目实战，弥补只会调用框架的短板，也适合作为团队学习材料。",
-      "score": 563122
+      "summary": "NariQ将Qwen3.8-27B压缩到10GB文件，声称接近BF16效果。这降低了本地部署大模型的门槛，适合显存有限的工作站；开发者可测试GGUF量化质量与推理速度，权衡精度和内存占用。",
+      "score": 65
     },
     {
       "title": "openclaw/openclaw -- The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
       "url": "https://github.com/openclaw/openclaw",
       "source": "GitHub",
-      "summary": "OpenClaw 主打跨操作系统、跨平台的通用 AI Agent，强调真正执行任务而非仅对话。值得关注其工具调用、权限隔离与可扩展性；开发者可评估将其用于自动化工作流和本地代理。",
-      "score": 394589
+      "summary": "OpenClaw定位为跨系统、跨平台的执行型AI代理，强调真正完成任务而非只对话。对开发者而言，它可能成为自动化桌面操作与工具调用的基础层，需关注权限、安全沙箱与可观测性。",
+      "score": 395107
     },
     {
       "title": "morluto/rea -- Reverse engineer anything with agents, from app behavior down to native binaries.",
       "url": "https://github.com/morluto/rea",
       "source": "GitHub",
-      "summary": "rea 用 Agent 从应用行为逆向到原生二进制，覆盖安全分析与兼容性研究。开发者应关注其自动化逆向能力与合规边界，可用于漏洞研究、协议分析和遗留系统迁移。",
-      "score": 463736
+      "summary": "rea用AI代理做逆向工程，从应用行为分析到原生二进制均可覆盖。它把代理编排引入安全研究与兼容性分析，能提升样本分析效率；开发者需注意合法合规、误报和二进制环境隔离。",
+      "score": 475425
+    },
+    {
+      "title": "obra/superpowers -- An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "source": "GitHub",
+      "summary": "Superpowers提供代理技能框架与开发方法论，试图把AI编码代理纳入可复用流程。它关注任务拆解、技能封装与协作规范，有助团队提升代理可控性；可评估其与主流编码工具的集成。",
+      "score": 324939
+    },
+    {
+      "title": "codecrafters-io/build-your-own-x -- Master programming by recreating your favorite technologies from scratch.",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "source": "GitHub",
+      "summary": "build-your-own-x汇总从零实现数据库、编译器、操作系统等教程，是理解底层原理的高质量入口。对开发者而言，它适合系统补课与面试准备；项目经久不衰，也反映动手造轮子的学习价值。",
+      "score": 564986
     }
   ]
 }
